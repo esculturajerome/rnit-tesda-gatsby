@@ -168,3 +168,9 @@ h6.text-uppercase {
   background-size: cover;
   background-position: bottom;
 }
+
+/* About Page */
+
+.about h3 {
+  padding: 2rem 0;
+}
