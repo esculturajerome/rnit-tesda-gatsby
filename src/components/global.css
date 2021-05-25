@@ -1,0 +1,83 @@
+a {
+  text-decoration: none !important;
+}
+
+.fs-lg {
+  font-size: 1.1875rem !important;
+}
+
+.bg-gradient-light-white {
+  background-image: linear-gradient(180deg, #f9fbfd 0, #fff);
+}
+
+.text-muted {
+  color: #869ab8 !important;
+}
+
+.lead {
+  font-size: 1.3125rem !important;
+  font-weight: 400 !important;
+}
+
+.py-md-11 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.border-bottom {
+  border-bottom: 1px solid #f1f4f8 !important;
+}
+
+.card {
+  word-wrap: break-word;
+  background-clip: border-box;
+  background-color: #fff !important;
+  border: 0 solid #f1f4f8 !important;
+  border-radius: 0.375rem !important;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.card-body {
+  min-height: 1px;
+  position: relative;
+  display: block;
+  flex-grow: 0;
+  flex: 1 1 auto !important;
+  padding: 1rem !important;
+}
+
+.badge.bg-primary-soft {
+  background-color: rgba(51, 94, 234, 0.1);
+  color: #335eea;
+}
+.h6.text-uppercase,
+.text-uppercase.h6,
+h6.text-uppercase {
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+.btn {
+  padding: 0.8125rem 1.25rem !important;
+}
+.lift {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.lift-lg:focus,
+.lift-lg:hover {
+  box-shadow: 0 2rem 5rem rgba(22, 28, 45, 0.1),
+    0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.05) !important;
+  transform: translate3d(0, -5px, 0);
+}
+
+.btn-primary-soft.active,
+.btn-primary-soft:focus,
+.btn-primary-soft:hover {
+  background-color: rgba(51, 94, 234, 0.15);
+  color: #335eea;
+}
+
+.shadow-light-lg {
+  box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05) !important;
+}
