@@ -6,7 +6,6 @@ import { Col, Row } from "react-bootstrap";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
-import Img from "gatsby-image";
 
 export const IndexPageTemplate = ({
   image,
@@ -36,7 +35,12 @@ export const IndexPageTemplate = ({
           lg={{ span: 6, order: 2 }}
           className="mb-3"
         >
-          <Img fluid={image.childImageSharp.fluid} />
+          <img
+            src={
+              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            }
+            className="img-fluid"
+          />
         </Col>
       </Row>
     </div>

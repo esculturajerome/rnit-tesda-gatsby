@@ -2,6 +2,10 @@ a {
   text-decoration: none !important;
 }
 
+img {
+  width: 100%;
+}
+
 .fs-lg {
   font-size: 1.1875rem !important;
 }
