@@ -1,17 +1,20 @@
 :root {
-  --primary-color: #335eea !important;
-}
-
-.navbar-brand {
-  color: var(--primary-color);
+  --primary-color: #335eea;
 }
 
 a {
   text-decoration: none !important;
 }
 
+ul {
+  list-style: none;
+}
 img {
   width: 100%;
+}
+
+a.navbar-brand {
+  color: var(--primary-color) !important;
 }
 
 .fs-lg {
@@ -120,6 +123,11 @@ h6.text-uppercase {
 .py-md-11 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Footer */

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
-import { Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 
 import Layout from "../components/Layout";
 import Features from "../components/Features";
@@ -66,13 +66,23 @@ export const IndexPageTemplate = ({
       <ButtonRow text="See all products" direction="/products" />
     </Row>
     <Row className="py-md-11">
-      <Col>
-        <h2 className="mb-5">
-          Latest <span className="text-primary">Stories</span>
-        </h2>
-        <BlogRoll />
-        <ButtonRow text="Read more" direction="/blog" />
-      </Col>
+      <div className="title-container">
+        <div className="left-panel">
+          <h2 className="mb-5">
+            Latest <span className="text-primary">Stories</span>
+          </h2>
+        </div>
+        <div className="right-panel">
+          <Link
+            to="/blog"
+            className="btn-outline-gray-300 d-flex align-items-center btn"
+          >
+            View All
+          </Link>
+        </div>
+      </div>
+      <BlogRoll />
+      {/* <ButtonRow text="Read more" direction="/blog" /> */}
     </Row>
   </>
 );
