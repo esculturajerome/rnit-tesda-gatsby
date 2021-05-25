@@ -1,6 +1,7 @@
 ---
 templateKey: about-page
 path: /about
+image: /img/products-full-width.jpg
 title: About our values
 ---
 ### Vision Statement
