@@ -1,6 +1,6 @@
 import React from "react";
 
-export default ({ title, text }) => {
+const FullWidthText = ({ title, text }) => {
   return (
     <section className="py-md-11">
       <div className="container">
@@ -15,3 +15,5 @@ export default ({ title, text }) => {
     </section>
   );
 };
+
+export default FullWidthText;

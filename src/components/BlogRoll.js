@@ -47,13 +47,6 @@ class BlogRoll extends React.Component {
 
                     <p className="text-muted">{post.excerpt}</p>
                   </div>
-                  <div className="card-meta mt-auto">
-                    <hr className="card-meta-divider" />
-
-                    <h6 className="text-uppercase text-muted me-2 mb-3 text-center">
-                      {post.frontmatter.date}
-                    </h6>
-                  </div>
                 </div>
               </Link>
             </Col>
