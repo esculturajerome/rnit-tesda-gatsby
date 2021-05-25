@@ -5,107 +5,75 @@ import logo from "../img/logo.svg";
 
 import { Navbar, Container, Nav } from "react-bootstrap";
 
-const NavBar = class extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: false,
-      navBarActiveClass: "",
-    };
-  }
+export default () => {
+  return (
+    <Container>
+      <Navbar collapseOnSelect expand="lg">
+        <Link to="/" className="navbar-brand">
+          React-Bootstrap
+        </Link>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Link className="nav-link" to="/about">
+              About
+            </Link>
+            <Link className="nav-link" to="/products">
+              Products
+            </Link>
+            <Link className="nav-link" to="/blog">
+              Blog
+            </Link>
+            <Link className="nav-link" to="/contact">
+              Contact
+            </Link>
+            <Link className="nav-link" to="/contact/examples">
+              Form Examples
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </Container>
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: "is-active",
-            })
-          : this.setState({
-              navBarActiveClass: "",
-            });
-      }
-    );
-  };
+    // <div className="container">
+    //   <div className="navbar-brand">
+    //     <Link to="/" className="navbar-item" title="Logo">
+    //       <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
+    //     </Link>
+    //     {/* Hamburger menu */}
+    //     <div
+    //       className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+    //       data-target="navMenu"
+    //       onClick={() => this.toggleHamburger()}
+    //     >
+    //       <span />
+    //       <span />
+    //       <span />
+    //     </div>
+    //   </div>
+    //   <div
+    //     id="navMenu"
+    //     className={`navbar-menu ${this.state.navBarActiveClass}`}
+    //   >
+    //     <div className="navbar-start has-text-centered">
+    // <Link className="navbar-item" to="/about">
+    //   About
+    // </Link>
+    // <Link className="navbar-item" to="/products">
+    //   Products
+    // </Link>
+    // <Link className="navbar-item" to="/blog">
+    //   Blog
+    // </Link>
+    // <Link className="navbar-item" to="/contact">
+    //   Contact
+    // </Link>
+    // <Link className="navbar-item" to="/contact/examples">
+    //   Form Examples
+    // </Link>
+    //     </div>
 
-  render() {
-    return (
-      <Container>
-        <Navbar>
-          <Link to="/" className="navbar-brand">
-            React-Bootstrap
-          </Link>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Link className="nav-link" to="/about">
-                About
-              </Link>
-              <Link className="nav-link" to="/products">
-                Products
-              </Link>
-              <Link className="nav-link" to="/blog">
-                Blog
-              </Link>
-              <Link className="nav-link" to="/contact">
-                Contact
-              </Link>
-              <Link className="nav-link" to="/contact/examples">
-                Form Examples
-              </Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </Container>
-
-      // <div className="container">
-      //   <div className="navbar-brand">
-      //     <Link to="/" className="navbar-item" title="Logo">
-      //       <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
-      //     </Link>
-      //     {/* Hamburger menu */}
-      //     <div
-      //       className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-      //       data-target="navMenu"
-      //       onClick={() => this.toggleHamburger()}
-      //     >
-      //       <span />
-      //       <span />
-      //       <span />
-      //     </div>
-      //   </div>
-      //   <div
-      //     id="navMenu"
-      //     className={`navbar-menu ${this.state.navBarActiveClass}`}
-      //   >
-      //     <div className="navbar-start has-text-centered">
-      // <Link className="navbar-item" to="/about">
-      //   About
-      // </Link>
-      // <Link className="navbar-item" to="/products">
-      //   Products
-      // </Link>
-      // <Link className="navbar-item" to="/blog">
-      //   Blog
-      // </Link>
-      // <Link className="navbar-item" to="/contact">
-      //   Contact
-      // </Link>
-      // <Link className="navbar-item" to="/contact/examples">
-      //   Form Examples
-      // </Link>
-      //     </div>
-
-      //   </div>
-      // </div>
-    );
-  }
+    //   </div>
+    // </div>
+  );
 };
-
-export default NavBar;

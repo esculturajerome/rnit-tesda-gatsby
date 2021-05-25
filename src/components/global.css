@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #335eea !important;
+}
+
+.navbar-brand {
+  color: var(--primary-color);
+}
+
 a {
   text-decoration: none !important;
 }
@@ -15,7 +23,7 @@ img {
 }
 
 .text-muted {
-  color: #869ab8 !important;
+  color: #677a97 !important;
 }
 
 .lead {
@@ -47,9 +55,13 @@ img {
   padding: 1rem !important;
 }
 
+.card-body h4 {
+  color: #161c2d !important;
+}
+
 .badge.bg-primary-soft {
   background-color: rgba(51, 94, 234, 0.1);
-  color: #335eea;
+  color: var(--primary-color);
 }
 .h6.text-uppercase,
 .text-uppercase.h6,
@@ -65,14 +77,14 @@ h6.text-uppercase {
 
 .btn-outline-gray-300 {
   border-color: #d9e2ef;
-  color: #335eea;
+  color: var(--primary-color);
 }
 
 .btn-outline-gray-300.active,
 .btn-outline-gray-300:focus,
 .btn-outline-gray-300:hover {
-  background-color: #335eea;
-  border-color: #335eea;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
   color: #fff;
 }
 
@@ -91,7 +103,7 @@ h6.text-uppercase {
 .btn-primary-soft:focus,
 .btn-primary-soft:hover {
   background-color: rgba(51, 94, 234, 0.15);
-  color: #335eea;
+  color: var(--primary-color);
 }
 
 .shadow-light-lg {
@@ -108,4 +120,51 @@ h6.text-uppercase {
 .py-md-11 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+/* Footer */
+
+.bg-gray-200 {
+  background-color: #f1f4f8 !important;
+}
+.text-gray-700 {
+  color: #506690 !important;
+}
+
+.shape:not([class*="shape-blur"]) {
+  overflow: hidden;
+}
+
+.shape-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.shape {
+  pointer-events: none;
+  position: absolute;
+}
+
+.shape:not([class*="shape-blur"]) > * {
+  transform: scale(2);
+}
+
+.shape-fluid-x > * {
+  height: auto;
+  width: 100%;
+}
+
+.shape-bottom > * {
+  transform-origin: top center;
+}
+
+.shape > * {
+  display: block;
+}
+
+.bg-image-contact {
+  /* background-image: url(../img/rnit-school.jpg) ;*/
+  background-size: cover;
+  background-position: bottom;
 }

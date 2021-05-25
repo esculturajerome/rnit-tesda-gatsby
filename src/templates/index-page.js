@@ -61,11 +61,9 @@ export const IndexPageTemplate = ({
         <p>{description}</p>
       </Col>
     </Row>
-    <Row>
-      <div className="py-md-11 border-bottom">
-        <Features gridItems={intro.blurbs} />
-        <ButtonRow text="See all products" direction="/products" />
-      </div>
+    <Row className="py-md-11 border-bottom">
+      <Features gridItems={intro.blurbs} />
+      <ButtonRow text="See all products" direction="/products" />
     </Row>
     <Row className="py-md-11">
       <Col>

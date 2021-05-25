@@ -1,15 +1,74 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react";
 
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+import logo from "../img/logo.svg";
+import facebook from "../img/social/facebook.svg";
+import instagram from "../img/social/instagram.svg";
+import twitter from "../img/social/twitter.svg";
+import vimeo from "../img/social/vimeo.svg";
 
-const Footer = class extends React.Component {
-  render() {
-    return (
+export default () => {
+  return (
+    <footer className="py-8 py-md-11 bg-gray-200">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-md-4 col-lg-3">
+            <h2 className="text-primary">RNIT</h2>
+
+            <p className="text-gray-700 mb-2">Get in touch</p>
+
+            <ul className="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li className="list-inline-item list-social-item me-3">
+                <a href="#!" className="text-decoration-none">
+                  <img
+                    src={facebook}
+                    alt="Facebook"
+                    style={{ width: "1em", height: "1em" }}
+                  />
+                </a>
+              </li>
+              <li className="list-inline-item list-social-item me-3">
+                <a href="#!" className="text-decoration-none">
+                  <img
+                    src={facebook}
+                    alt="Facebook"
+                    style={{ width: "1em", height: "1em" }}
+                  />
+                </a>
+              </li>
+              <li className="list-inline-item list-social-item me-3">
+                <a href="#!" className="text-decoration-none">
+                  <img
+                    src={facebook}
+                    alt="Facebook"
+                    style={{ width: "1em", height: "1em" }}
+                  />
+                </a>
+              </li>
+              <li className="list-inline-item list-social-item">
+                <a href="#!" className="text-decoration-none">
+                  <img
+                    src={facebook}
+                    alt="Facebook"
+                    style={{ width: "1em", height: "1em" }}
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-12 col-md-8 col-lg-9">
+            <p className="text-muted pt-3">
+              A Transparency Seal, prominently displayed on the main page of the
+              website of a particular government agency, is a certificate that
+              it has complied with the requirements of Section 93. This Seal
+              links to a page within the agency’s website which contains an
+              index of downloadable items of each of the above-mentioned
+              documents.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    /*     
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           <img
@@ -107,9 +166,6 @@ const Footer = class extends React.Component {
             </div>
           </div>
         </div>
-      </footer>
-    )
-  }
-}
-
-export default Footer
+      </footer> */
+  );
+};

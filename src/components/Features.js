@@ -5,7 +5,7 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import { Col, Row } from "react-bootstrap";
 
 const FeatureGrid = ({ gridItems }) => (
-  <Row>
+  <>
     {gridItems.map((item) => (
       <Col xs={12} md={4} key={item.text}>
         <div
@@ -18,7 +18,7 @@ const FeatureGrid = ({ gridItems }) => (
         <p className="text-muted mb-6 mb-md-0">{item.text}</p>
       </Col>
     ))}
-  </Row>
+  </>
 );
 
 FeatureGrid.propTypes = {
