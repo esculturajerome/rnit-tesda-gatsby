@@ -11,10 +11,7 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <Row className="py-md-11">
-        <h2 className="mb-5">
-          Latest <span className="text-primary">Stories</span>
-        </h2>
+      <Row>
         {posts &&
           posts.map(({ node: post }) => (
             <Col xs={12} md={4} key={post.id}>

@@ -23,10 +23,6 @@ img {
   font-weight: 400 !important;
 }
 
-.py-md-11 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
 .border-bottom {
   border-bottom: 1px solid #f1f4f8 !important;
 }
@@ -61,9 +57,25 @@ h6.text-uppercase {
   letter-spacing: 0.08em;
   font-size: 0.75rem;
 }
+
+/* Button */
 .btn {
   padding: 0.8125rem 1.25rem !important;
 }
+
+.btn-outline-gray-300 {
+  border-color: #d9e2ef;
+  color: #335eea;
+}
+
+.btn-outline-gray-300.active,
+.btn-outline-gray-300:focus,
+.btn-outline-gray-300:hover {
+  background-color: #335eea;
+  border-color: #335eea;
+  color: #fff;
+}
+
 .lift {
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
@@ -84,4 +96,16 @@ h6.text-uppercase {
 
 .shadow-light-lg {
   box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05) !important;
+}
+
+/* Spacing */
+
+.py-md-10 {
+  padding-bottom: 5rem !important;
+  padding-top: 5rem !important;
+}
+
+.py-md-11 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }

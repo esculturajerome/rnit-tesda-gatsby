@@ -6,6 +6,7 @@ import { Col, Row } from "react-bootstrap";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import ButtonRow from "../components/ButtonRow";
 
 export const IndexPageTemplate = ({
   image,
@@ -44,7 +45,6 @@ export const IndexPageTemplate = ({
         </Col>
       </Row>
     </div>
-
     <Row>
       <Col>
         <h1>{mainpitch.title}</h1>
@@ -55,51 +55,27 @@ export const IndexPageTemplate = ({
         <h3>{mainpitch.description}</h3>
       </Col>
     </Row>
-
     <Row>
       <Col>
         <h3>{heading}</h3>
         <p>{description}</p>
       </Col>
     </Row>
-    <Features gridItems={intro.blurbs} />
-    <Link className="btn" to="/products">
-      See all products
-    </Link>
-
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile"></div>
-                  <div className="tile"></div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12"></div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12 has-text-centered"></div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <Row>
+      <div className="py-md-11 border-bottom">
+        <Features gridItems={intro.blurbs} />
+        <ButtonRow text="See all products" direction="/products" />
       </div>
-    </section>
+    </Row>
+    <Row className="py-md-11">
+      <Col>
+        <h2 className="mb-5">
+          Latest <span className="text-primary">Stories</span>
+        </h2>
+        <BlogRoll />
+        <ButtonRow text="Read more" direction="/blog" />
+      </Col>
+    </Row>
   </>
 );
 
