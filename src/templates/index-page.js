@@ -48,18 +48,16 @@ export const IndexPageTemplate = ({
     </div>
     <FullWidthText title={mainpitch.title} text={mainpitch.description} />
 
-    {/* <Row>
+    <Row>
       <Col>
         <h3>{heading}</h3>
         <p>{description}</p>
       </Col>
-    </Row> */}
-    {/* <Row className="py-md-11 border-bottom">
+    </Row>
+    <Row className="py-md-11 border-bottom">
       <Features gridItems={intro.blurbs} />
-       (
-        <ButtonRow text="See all products" direction="/products" />
-      )
-    </Row> */}
+      <ButtonRow text="See all products" direction="/products" />
+    </Row>
     <Row className="py-md-11">
       <div className="title-container">
         <div className="left-panel">
