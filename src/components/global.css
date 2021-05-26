@@ -145,6 +145,10 @@ h6.text-uppercase {
 
 /* Footer */
 
+.list-inline span {
+  color: var(--bs-dark);
+}
+
 .bg-gray-200 {
   background-color: #f1f4f8 !important;
 }

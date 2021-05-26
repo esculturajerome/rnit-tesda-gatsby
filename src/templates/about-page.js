@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import FullWidthText from "../components/FullWidthText";
 import { Container, Row, Col } from "react-bootstrap";
 
 export const AboutPageTemplate = ({
@@ -16,14 +17,6 @@ export const AboutPageTemplate = ({
   return (
     <Container className="py-md-11 about">
       <Row className="mb-5">
-        {/* <Col>
-          <img
-            src={
-              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-            }
-            className="img-fluid"
-          />
-        </Col> */}
         <Col>
           <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
             {title}
@@ -33,6 +26,17 @@ export const AboutPageTemplate = ({
       <Row>
         <Col>
           <PageContent className="content" content={content} />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <FullWidthText title="Organizational Chart" />
+          <img
+            src={
+              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+            }
+            className="img-fluid"
+          />
         </Col>
       </Row>
     </Container>

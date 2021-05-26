@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import ButtonRow from "../components/ButtonRow";
+import FullWidthText from "../components/FullWidthText";
 
 export const IndexPageTemplate = ({
   image,
@@ -45,16 +46,8 @@ export const IndexPageTemplate = ({
         </Col>
       </Row>
     </div>
-    <Row>
-      <Col>
-        <h1>{mainpitch.title}</h1>
-      </Col>
-    </Row>
-    <Row>
-      <Col>
-        <h3>{mainpitch.description}</h3>
-      </Col>
-    </Row>
+    <FullWidthText title={mainpitch.title} text={mainpitch.description} />
+
     <Row>
       <Col>
         <h3>{heading}</h3>
@@ -68,9 +61,10 @@ export const IndexPageTemplate = ({
     <Row className="py-md-11">
       <div className="title-container">
         <div className="left-panel">
-          <h2 className="mb-5">
+          <h2 className="mb-0">
             Latest <span className="text-primary">Stories</span>
           </h2>
+          <p>this is a subtitle</p>
         </div>
         <div className="right-panel">
           <Link

@@ -14,7 +14,7 @@ class BlogRoll extends React.Component {
       <Row>
         {posts &&
           posts.map(({ node: post }) => (
-            <Col xs={12} md={4} key={post.id}>
+            <Col xs={12} md={4} key={post.id} className="mb-3">
               <Link to={post.fields.slug} className="btn-primary-soft lift">
                 <div
                   className={`card shadow-light-lg lift lift-lg ${
