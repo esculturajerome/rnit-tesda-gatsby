@@ -13,22 +13,7 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
 intro:
-  blurbs:
-    - image: /img/coffee.png
-      text: "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco"
-    - image: /img/coffee-gear.png
-      text: " laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum."
-    - image: /img/tutorials.png
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ultrices eros in
-        cursus turpis massa tincidunt. Vulputate odio ut enim blandit volutpat
-        maecenas volutpat blandit aliquam. Malesuada proin libero nunc consequat
-        "
+  blurbs: []
   heading: What we offer
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
