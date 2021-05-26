@@ -5,8 +5,9 @@ image: /img/illustration-2.png
 heading: Romblon National Institute of Technology
 subheading: Skilling Romblon thru quality TVET Delivery for Peoples Prosperity
 mainpitch:
-  title: ""
-  description: ""
+  title: Lorem Ipsum
+  description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+    accusantium doloremque laudantium, totam rem aperiam
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
