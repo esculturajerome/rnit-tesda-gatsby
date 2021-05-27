@@ -4,9 +4,7 @@ import { Link, graphql } from "gatsby";
 import { Container, Col, Row } from "react-bootstrap";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
-import ButtonRow from "../components/ButtonRow";
 import FullWidthText from "../components/FullWidthText";
 import TextImage from "../components/TextImage";
 
@@ -15,9 +13,9 @@ import { v4 } from "uuid";
 export const IndexPageTemplate = ({
   image,
   title,
-  heading,
   subheading,
   main,
+  mainImage,
   intro,
 }) => (
   <>
@@ -64,9 +62,9 @@ export const IndexPageTemplate = ({
         title={main.heading}
         text={main.description}
         image={
-          !!main.image.childImageSharp
-            ? main.image.childImageSharp.fluid.src
-            : image
+          !!mainImage.childImageSharp
+            ? mainImage.childImageSharp.fluid.src
+            : mainImage
         }
       />
     </Container>
@@ -100,9 +98,9 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
   subheading: PropTypes.string,
   main: PropTypes.object,
+  mainImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -115,9 +113,9 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         main={frontmatter.main}
+        mainImage={frontmatter.main.image}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -146,7 +144,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
         subheading
         main {
           heading
