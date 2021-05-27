@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthText from "../components/FullWidthText";
 import TextImage from "../components/TextImage";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 import { v4 } from "uuid";
 
@@ -31,25 +32,29 @@ export const IndexPageTemplate = ({
             {subheading}
           </p>
         </Col>
-        <Col
-          xs={{ span: 12, order: 1 }}
-          md={{ span: 5, order: 2 }}
-          lg={{ span: 6, order: 2 }}
-          className="mb-3"
-        >
-          <img
-            src={
-              !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-            }
-            className="img-fluid"
-          />
-        </Col>
+        {image && (
+          <Col
+            xs={{ span: 12, order: 1 }}
+            md={{ span: 5, order: 2 }}
+            lg={{ span: 6, order: 2 }}
+            className="mb-3"
+          >
+            <PreviewCompatibleImage imageInfo={image} />
+          </Col>
+        )}
       </Row>
     </Container>
     <Container className="py-md-11">
       <Row className="mb-4">
         {intro.blurbs.map((goal) => (
           <Col xs={12} md={4} key={v4()} className="mt-2">
+            {goal.image && (
+              <img
+                src={goal.image.publicURL}
+                alt="goal-icon"
+                className="goal-icon"
+              />
+            )}
             <h3>{goal.title}</h3>
             <p className="text-muted mb-6 mb-md-0">{goal.text}</p>
           </Col>
@@ -62,11 +67,7 @@ export const IndexPageTemplate = ({
       <TextImage
         title={main.heading}
         text={main.description}
-        image={
-          !!mainImage.childImageSharp
-            ? mainImage.childImageSharp.fluid.src
-            : mainImage
-        }
+        image={mainImage}
       />
     </Container>
     <div className="bg-gradient-light-white ">
@@ -160,11 +161,7 @@ export const pageQuery = graphql`
         intro {
           blurbs {
             image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+              publicURL
             }
             text
             title

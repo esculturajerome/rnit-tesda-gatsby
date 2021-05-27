@@ -20,6 +20,7 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  preview,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -60,7 +61,12 @@ export const BlogPostTemplate = ({
               </ul>
             </div>
           ) : null}
-          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+          {preview && (
+            <DiscussionEmbed
+              shortname={disqusShortname}
+              config={disqusConfig}
+            />
+          )}
         </Col>
       </Row>
     </Container>
@@ -84,7 +90,7 @@ const BlogPost = ({ data }) => {
     <Layout>
       <BlogPostTemplate
         id={post.id}
-        path={post.fields.path}
+        path={post.fields.slug}
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}

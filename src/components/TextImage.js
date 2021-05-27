@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+
 const TextImage = ({ title, text, image }) => {
   return (
     <Row className="align-items-center">
@@ -20,7 +22,7 @@ const TextImage = ({ title, text, image }) => {
           className="mb-3 "
         >
           <div className="w-md-150 w-lg-130 position-relative">
-            <img src={image} />
+            <PreviewCompatibleImage imageInfo={image} />
           </div>
         </Col>
       )}
