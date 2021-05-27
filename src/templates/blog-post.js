@@ -68,6 +68,8 @@ export const BlogPostTemplate = ({
 };
 
 BlogPostTemplate.propTypes = {
+  id: PropTypes.string,
+  path: PropTypes.string,
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
