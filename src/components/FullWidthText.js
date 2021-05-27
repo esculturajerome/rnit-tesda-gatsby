@@ -1,6 +1,6 @@
 import React from "react";
 
-const FullWidthText = ({ title, text }) => {
+export default ({ title, text }) => {
   return (
     <div className="py-md-11">
       <div className="row justify-content-center">
@@ -13,5 +13,3 @@ const FullWidthText = ({ title, text }) => {
     </div>
   );
 };
-
-export default FullWidthText;

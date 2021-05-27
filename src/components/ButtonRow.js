@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 
-const ButtonRow = ({ text, direction }) => (
+export default ({ text, direction }) => (
   <section className="py-md-10">
     <Container>
       <Row className="justify-content-center">
@@ -18,5 +18,3 @@ const ButtonRow = ({ text, direction }) => (
     </Container>
   </section>
 );
-
-export default ButtonRow;

@@ -37,15 +37,17 @@ class BlogRoll extends React.Component {
 
                   <div className="card-body">
                     <h4>{post.frontmatter.title} </h4>
+                    <p className="mb-3 mt-3 text-muted">
+                      {post.frontmatter.date}
+                    </p>
+                    <p className="text-muted">{post.excerpt}</p>
                     <div className="mb-3">
                       <span className="badge rounded-pill bg-primary-soft">
                         <span className="h6 fw-bold text-uppercase">
-                          {post.frontmatter.date}
+                          {post.frontmatter.tags}
                         </span>
                       </span>
                     </div>
-
-                    <p className="text-muted">{post.excerpt}</p>
                   </div>
                 </div>
               </Link>
@@ -84,6 +86,7 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
+                tags
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
