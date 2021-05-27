@@ -15,13 +15,16 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
 intro:
   blurbs:
     - title: Built for developers
-      text: "Landkit is built to make your life easier. Variables, build tooling,
+      text:
+        "Landkit is built to make your life easier. Variables, build tooling,
         documentation, and reusable components. "
     - title: Designed to be modern
-      text: Designed with the latest design trends in mind. Landkit feels modern,
+      text:
+        Designed with the latest design trends in mind. Landkit feels modern,
         minimal, and beautiful.
     - title: Documentation for everything
-      text: "We've written extensive documentation for components and tools, so you
+      text:
+        "We've written extensive documentation for components and tools, so you
         never have to reverse engineer anything. "
   heading: What we offer
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -32,15 +35,6 @@ main:
   heading: "We have lots of experience "
   description: "We've built well over a dozen Bootstrap themes and sold tens of
     thousands of copies. "
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
   image:
     image: /img/building.png
     alt: RNIT Building
