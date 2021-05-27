@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
 }) => (
   <>
     <Container>
-      <Row className="align-items-center py-md-11">
+      <Row className="align-items-center py-md-12">
         <Col
           xs={{ span: 12, order: 2 }}
           md={{ span: 7, order: 1 }}
@@ -46,10 +46,10 @@ export const IndexPageTemplate = ({
         </Col>
       </Row>
     </Container>
-    <Container>
-      <Row className="py-md-11">
+    <Container className="full-height">
+      <Row className="mb-4">
         {intro.blurbs.map((goal) => (
-          <Col xs={12} md={4} key={v4()}>
+          <Col xs={12} md={4} key={v4()} className="mt-2">
             <h3>{goal.title}</h3>
             <p className="text-muted mb-6 mb-md-0">{goal.text}</p>
           </Col>
@@ -57,7 +57,7 @@ export const IndexPageTemplate = ({
       </Row>
       <FullWidthText title={intro.heading} text={intro.description} />
     </Container>
-    <Container>
+    <Container className="full-height">
       <TextImage
         title={main.heading}
         text={main.description}
@@ -68,9 +68,9 @@ export const IndexPageTemplate = ({
         }
       />
     </Container>
-    <div className="bg-gradient-light-white">
+    <div className="bg-gradient-light-white ">
       <Container>
-        <Row className="py-md-11 ">
+        <Row className="mt-5">
           <div className="title-container">
             <div className="left-panel">
               <h2 className="mb-0">
@@ -87,9 +87,9 @@ export const IndexPageTemplate = ({
               </Link>
             </div>
           </div>
-          <BlogRoll />
           {/* <ButtonRow text="Read more" direction="/blog" /> */}
         </Row>
+        <BlogRoll />
       </Container>
     </div>
   </>

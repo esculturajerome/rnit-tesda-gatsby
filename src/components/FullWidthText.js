@@ -2,7 +2,7 @@ import React from "react";
 
 const FullWidthText = ({ title, text }) => {
   return (
-    <div className="py-md-11">
+    <div className="mt-5">
       <div className="row justify-content-center">
         <div className="col-12 col-md-10 col-lg-8 text-center">
           {title && <h2>{title}</h2>}
