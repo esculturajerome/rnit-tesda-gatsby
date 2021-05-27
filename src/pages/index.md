@@ -13,19 +13,25 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
 intro:
-  blurbs: []
+  blurbs:
+    - title: Built for developers
+      text: "Landkit is built to make your life easier. Variables, build tooling,
+        documentation, and reusable components. "
+    - title: Designed to be modern
+      text: Designed with the latest design trends in mind. Landkit feels modern,
+        minimal, and beautiful.
+    - title: Documentation for everything
+      text: "We've written extensive documentation for components and tools, so you
+        never have to reverse engineer anything. "
   heading: What we offer
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
     commodo consequat. "
 main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
+  heading: "We have lots of experience "
+  description: "We've built well over a dozen Bootstrap themes and sold tens of
+    thousands of copies. "
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /img/products-grid3.jpg
@@ -35,4 +41,7 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+  image:
+    image: /img/building.png
+    alt: RNIT Building
 ---
