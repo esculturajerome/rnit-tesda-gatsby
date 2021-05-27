@@ -26,7 +26,7 @@ export const IndexPageTemplate = ({
           md={{ span: 7, order: 1 }}
           lg={{ span: 6, order: 1 }}
         >
-          <h1 className="display-3 text-center text-md-start">{title}</h1>
+          <h1 className="display-3 text-center text-md-start">{heading}</h1>
           <p className="lead text-center text-md-start text-muted mb-6 mb-lg-8">
             {subheading}
           </p>
@@ -47,24 +47,20 @@ export const IndexPageTemplate = ({
       </Row>
     </div>
     <FullWidthText title={mainpitch.title} text={mainpitch.description} />
-
-    <Row>
-      <Col>
-        <h3>{heading}</h3>
-        <p>{description}</p>
-      </Col>
-    </Row>
-    <Row className="py-md-11 border-bottom">
-      <Features gridItems={intro.blurbs} />
-      <ButtonRow text="See all products" direction="/products" />
-    </Row>
+    <FullWidthText title={heading} text={description} />
+    {intro.blurbs === [] ? (
+      <Row className="py-md-11 border-bottom">
+        <Features gridItems={intro.blurbs} />
+        <ButtonRow text="See all products" direction="/products" />
+      </Row>
+    ) : null}
     <Row className="py-md-11">
       <div className="title-container">
         <div className="left-panel">
           <h2 className="mb-0">
             Latest <span className="text-primary">Stories</span>
           </h2>
-          <p>this is a subtitle</p>
+          <p>This is a subtitle</p>
         </div>
         <div className="right-panel">
           <Link
