@@ -46,7 +46,7 @@ export const IndexPageTemplate = ({
         </Col>
       </Row>
     </Container>
-    <Container className="full-height">
+    <Container className="py-md-11">
       <Row className="mb-4">
         {intro.blurbs.map((goal) => (
           <Col xs={12} md={4} key={v4()} className="mt-2">
@@ -55,9 +55,10 @@ export const IndexPageTemplate = ({
           </Col>
         ))}
       </Row>
-      <FullWidthText title={intro.heading} text={intro.description} />
     </Container>
-    <Container className="full-height">
+    <Container>
+      <FullWidthText title={intro.heading} text={intro.description} />
+
       <TextImage
         title={main.heading}
         text={main.description}
