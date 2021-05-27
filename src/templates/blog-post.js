@@ -7,6 +7,8 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { DiscussionEmbed } from "disqus-react";
 
+import { Container, Col, Row } from "react-bootstrap";
+
 // import {DiscussionEmbed} from 'disqus-react';
 
 export const BlogPostTemplate = ({
@@ -31,35 +33,37 @@ export const BlogPostTemplate = ({
   };
 
   return (
-    <div className="row justify-content-center py-md-11">
-      <div className="col-12 col-md-10 col-lg-9 col-xl-8">
-        {helmet || ""}
-        <h1 className="display-4 text-center mb-5">{title}</h1>
-        <p>{description}</p>
-        <PostContent content={content} />
-        {tags && tags.length ? (
-          <div style={{ marginTop: `4rem` }}>
-            <h4>Tags</h4>
-            <ul className="taglist">
-              {tags.map((tag) => (
-                <li
-                  key={tag + `tag`}
-                  className="badge rounded-pill bg-primary-soft"
-                >
-                  <Link
-                    to={`/tags/${kebabCase(tag)}/`}
-                    className="h6 fw-bold text-uppercase"
+    <Container>
+      <Row className="justify-content-center py-md-11">
+        <Col xs={12} md={10} lg={9}>
+          {helmet || ""}
+          <h1 className="display-4 text-center mb-5">{title}</h1>
+          <p>{description}</p>
+          <PostContent content={content} />
+          {tags && tags.length ? (
+            <div style={{ marginTop: `4rem` }}>
+              <h4>Tags</h4>
+              <ul className="taglist">
+                {tags.map((tag) => (
+                  <li
+                    key={tag + `tag`}
+                    className="badge rounded-pill bg-primary-soft"
                   >
-                    {tag}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : null}
-        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-      </div>
-    </div>
+                    <Link
+                      to={`/tags/${kebabCase(tag)}/`}
+                      className="h6 fw-bold text-uppercase"
+                    >
+                      {tag}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

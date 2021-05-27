@@ -51,60 +51,6 @@ class BlogRoll extends React.Component {
               </Link>
             </Col>
           ))}
-        {/* {posts &&
-          posts.map(({ node: post }) => (
-            <Col xs={12} md={4} key={post.id}>
-              <div
-                className={`card shadow-light-lg lift lift-lg ${
-                  post.frontmatter.featuredpost ? "is-featured" : ""
-                }`}
-              >
-                {post.frontmatter.featuredimage ? (
-                  <div className="card-img-top">
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                      }}
-                    />
-                    <div className="position-relative">
-                      <div className="shape shape-bottom shape-fluid-x text-white">
-                        <svg
-                          viewBox="0 0 2880 48"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z"
-                            fill="currentColor"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                ) : null}
-                <p className="post-meta">
-                  <Link
-                    className="title has-text-primary is-size-4"
-                    to={post.fields.slug}
-                  >
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <span className="subtitle is-size-5 is-block">
-                    {post.frontmatter.date}
-                  </span>
-                </p>
-                <p className="text-muted">{post.excerpt}</p>
-                <Link
-                  className="btn btn-primary-soft lift"
-                  to={post.fields.slug}
-                >
-                  Keep Reading →
-                </Link>
-              </div>
-            </Col>
-          ))} */}
       </Row>
     );
   }

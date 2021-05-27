@@ -14,7 +14,7 @@ export default () => {
     <footer className="py-8 py-md-11 bg-gray-200">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-4 col-lg-4">
+          <div className="col-12 col-md-4 col-lg-4 mb-5">
             <h2 className="text-primary">RNIT</h2>
 
             <p className="text-gray-700 mb-2">Get in touch</p>

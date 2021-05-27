@@ -55,28 +55,6 @@ collections:
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
           - {
-              label: Mainpitch,
-              name: mainpitch,
-              widget: object,
-              required: false,
-              fields:
-                [
-                  {
-                    label: Title,
-                    name: title,
-                    widget: string,
-                    required: false,
-                  },
-                  {
-                    label: Description,
-                    name: description,
-                    widget: text,
-                    required: false,
-                  },
-                ],
-            }
-          - { label: Description, name: description, widget: string }
-          - {
               label: Intro,
               name: intro,
               widget: object,
