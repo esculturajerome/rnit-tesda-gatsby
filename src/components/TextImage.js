@@ -17,9 +17,11 @@ const TextImage = ({ title, text, image }) => {
           xs={{ span: 12, order: 1 }}
           md={{ span: 5, order: 2 }}
           lg={{ span: 6, order: 2 }}
-          className="mb-3"
+          className="mb-3 "
         >
-          <img src={image} className="img-fluid" />
+          <div className="w-md-150 w-lg-130 position-relative">
+            <img src={image} />
+          </div>
         </Col>
       )}
     </Row>

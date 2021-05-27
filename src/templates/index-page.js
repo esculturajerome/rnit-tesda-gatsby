@@ -60,7 +60,11 @@ export const IndexPageTemplate = ({
     <TextImage
       title={main.heading}
       text={main.description}
-      image={main.image}
+      image={
+        !!main.image.childImageSharp
+          ? main.image.childImageSharp.fluid.src
+          : image
+      }
     />
     <FullWidthText title={intro.heading} text={intro.description} />
     {intro.blurbs === [] ? (
@@ -152,7 +156,7 @@ export const pageQuery = graphql`
           description
           image {
             childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
+              fluid(maxWidth: 2048, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }

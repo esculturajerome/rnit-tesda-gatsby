@@ -35,7 +35,5 @@ main:
   heading: "We have lots of experience "
   description: "We've built well over a dozen Bootstrap themes and sold tens of
     thousands of copies. "
-  image:
-    image: /img/building.png
-    alt: RNIT Building
+  image: /img/building.png
 ---

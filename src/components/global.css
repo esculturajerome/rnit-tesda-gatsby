@@ -6,15 +6,16 @@
 
 body,
 html {
-  font-family: "Cabin", sans-serif;
+  font-family: "Cabin", sans-serif !important;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   letter-spacing: -0.01em;
   font-weight: 300;
 }
@@ -29,12 +30,18 @@ h3 {
   line-height: 1.4;
 }
 
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
 a {
   text-decoration: none !important;
 }
 
 img {
   width: 100%;
+  border-radius: 0.375rem !important;
 }
 
 a.navbar-brand {
@@ -51,6 +58,7 @@ a.navbar-brand {
 
 .text-muted {
   color: #677a97 !important;
+  font-weight: 300 !important;
 }
 
 .lead {
@@ -209,4 +217,16 @@ h6.text-uppercase {
 
 .about h3 {
   padding: 2rem 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .w-lg-130 {
+    width: 130% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .w-md-150 {
+    width: 150% !important;
+  }
 }
