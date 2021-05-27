@@ -13,9 +13,20 @@ html {
 h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   font-family: "Roboto", sans-serif;
+  letter-spacing: -0.01em;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.4;
 }
 
 a {
