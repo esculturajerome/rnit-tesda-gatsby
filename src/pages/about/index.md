@@ -2,7 +2,9 @@
 templateKey: about-page
 path: /about
 image: /img/org-chart.jpg
-title: About our values
+title: Small team. Big hearts.
+description: Our focus is always on finding the best people to work with. Our
+  bar is high, but you look ready to take on the challenge.
 ---
 ### Vision Statement
 
