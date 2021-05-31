@@ -9,7 +9,7 @@ export default () => {
     <Container>
       <Navbar collapseOnSelect expand="lg">
         <Link to="/" className="navbar-brand">
-          <img src={logo} alt="Logo" className="logo" width="50" />
+          <img src={logo} alt="Logo" className="logo" width="80" />
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

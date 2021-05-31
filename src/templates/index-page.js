@@ -34,22 +34,24 @@ export const IndexPageTemplate = ({
           </p>
 
           <div className="text-center text-md-start">
-            <Link className="btn btn-primary lift me-1">Enrol Now</Link>
-            <Link className="btn btn-primary-soft lift">Read More</Link>
+            <Link to="/" className="btn btn-primary lift me-1">
+              Enrol Now
+            </Link>
+            <Link to="/" className="btn btn-primary-soft lift">
+              Read More
+            </Link>
           </div>
         </Col>
-        {image && (
-          <Col
-            xs={{ span: 12, order: 1 }}
-            md={{ span: 5, order: 2 }}
-            lg={{ span: 6, order: 2 }}
-            className="mb-3 "
-          >
-            <div className="w-md-150 w-lg-130 position-relative">
-              <PreviewCompatibleImage imageInfo={image} />
-            </div>
-          </Col>
-        )}
+        <Col
+          xs={{ span: 12, order: 1 }}
+          md={{ span: 5, order: 2 }}
+          lg={{ span: 6, order: 2 }}
+          className="mb-3 "
+        >
+          <div className="w-md-150 w-lg-130 position-relative">
+            <PreviewCompatibleImage imageInfo={image} />
+          </div>
+        </Col>
       </Row>
     </Container>
     <Container className="py-md-11">

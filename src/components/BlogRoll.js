@@ -42,11 +42,21 @@ class BlogRoll extends React.Component {
                     </p>
                     <p className="text-muted">{post.excerpt}</p>
                     <div className="mb-3">
-                      <span className="badge rounded-pill bg-primary-soft">
-                        <span className="h6 fw-bold text-uppercase">
-                          {post.frontmatter.tags}
+                      {post.frontmatter.tags.length > 1 ? (
+                        post.frontmatter.tags.map((tag) => (
+                          <span className="badge me-1 rounded-pill bg-primary-soft">
+                            <span className="h6 fw-bold text-uppercase">
+                              {tag}
+                            </span>
+                          </span>
+                        ))
+                      ) : (
+                        <span className="badge rounded-pill bg-primary-soft">
+                          <span className="h6 fw-bold text-uppercase">
+                            {post.frontmatter.tags}
+                          </span>
                         </span>
-                      </span>
+                      )}
                     </div>
                   </div>
                 </div>
