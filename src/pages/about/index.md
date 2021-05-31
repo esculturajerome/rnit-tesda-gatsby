@@ -34,5 +34,5 @@ main:
       provide quality services.
     values: We believe in competence, integrity, high level of commitment,
       transparency, 5S, strong desire for improvement, teamwork and cooperation.
-image: /img/org-chart.jpg
+image: /img/org-chart.webp
 ---
