@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Romblon National Institute of Technology
-image: /img/building.png
+image: /img/building.webp
 subheading: Skilling Romblon thru quality TVET Delivery for Peoples Prosperity
 intro:
   blurbs:
