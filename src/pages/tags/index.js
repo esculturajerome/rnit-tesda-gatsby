@@ -18,21 +18,21 @@ const TagsPage = ({
       <Helmet title={`Tags | ${title}`} />
       <Row className="py-md-11">
         <h1>Tags</h1>
-        <ul className="taglist">
+        <div>
           {group.map((tag) => (
-            <li
+            <div
               key={tag.fieldValue}
-              className="badge rounded-pill bg-primary-soft"
+              className="badge rounded-pill bg-secondary-soft me-2"
             >
               <Link
                 to={`/tags/${kebabCase(tag.fieldValue)}/`}
-                className="h6 fw-bold text-uppercase"
+                className="h6 text-uppercase"
               >
                 {tag.fieldValue} ({tag.totalCount})
               </Link>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       </Row>
     </Container>
   </Layout>

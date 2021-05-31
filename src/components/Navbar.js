@@ -15,19 +15,19 @@ export default () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link lift" to="/about">
               About
             </Link>
-            <Link className="nav-link" to="/products">
+            <Link className="nav-link lift" to="/products">
               Products
             </Link>
-            <Link className="nav-link" to="/blog">
+            <Link className="nav-link lift" to="/blog">
               Blog
             </Link>
-            <Link className="nav-link" to="/contact">
+            <Link className="nav-link lift" to="/contact">
               Contact
             </Link>
-            <Link className="nav-link" to="/contact/examples">
+            <Link className="nav-link lift" to="/contact/examples">
               Form Examples
             </Link>
           </Nav>

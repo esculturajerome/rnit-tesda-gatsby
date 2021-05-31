@@ -42,26 +42,24 @@ export const BlogPostTemplate = ({
           <p>{description}</p>
           <PostContent content={content} />
           {tags && tags.length ? (
-            <div style={{ marginTop: `4rem` }}>
-              <h4>Tags</h4>
-              <ul className="taglist">
-                {tags.map((tag) => (
-                  <li
-                    key={tag + `tag`}
-                    className="badge rounded-pill bg-primary-soft"
+            <div className="mt-5">
+              <h6 className="fw-bold text-uppercase text-muted mb-0">Tags</h6>
+              {tags.map((tag) => (
+                <div
+                  key={tag + `tag`}
+                  className="badge rounded-pill bg-secondary-soft me-2"
+                >
+                  <Link
+                    to={`/tags/${kebabCase(tag)}/`}
+                    className="h6 text-uppercase"
                   >
-                    <Link
-                      to={`/tags/${kebabCase(tag)}/`}
-                      className="h6 fw-bold text-uppercase"
-                    >
-                      {tag}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+                    {tag}
+                  </Link>
+                </div>
+              ))}
             </div>
           ) : null}
-          {preview && (
+          {!preview && (
             <DiscussionEmbed
               shortname={disqusShortname}
               config={disqusConfig}

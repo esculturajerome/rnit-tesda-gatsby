@@ -1,21 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
   --primary-color: #335eea;
+  --text-color: #161c2d;
 }
 
 body,
 html {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   line-height: 1.6;
   overflow-x: hidden;
+  color: var(--text-color);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Questrial", sans-serif !important;
   letter-spacing: -0.01em;
 }
 
@@ -107,6 +109,16 @@ a.navbar-brand {
   background-color: rgba(51, 94, 234, 0.1);
   color: var(--primary-color);
 }
+.badge.bg-secondary-soft {
+  background-color: rgba(80, 102, 144, 0.1);
+  color: #506690;
+}
+.badge.bg-secondary-soft[href]:focus,
+.badge.bg-secondary-soft[href]:hover {
+  background-color: rgba(80, 102, 144, 0.2);
+  color: #506690;
+}
+
 .h6.text-uppercase,
 .text-uppercase.h6,
 h6.text-uppercase {
@@ -226,6 +238,48 @@ h6.text-uppercase {
   /* background-image: url(../img/rnit-school.jpg) ;*/
   background-size: cover;
   background-position: bottom;
+}
+
+/* Gallery */
+
+.carousel {
+  position: relative;
+  height: 50vh;
+  background: gray;
+}
+
+.active.carousel-item {
+  height: 50vh;
+}
+
+.sr-only {
+  display: none;
+}
+
+.horizontal-scroll {
+  margin-left: 20px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.image-name {
+  width: 160px;
+  margin: 5px;
+}
+
+.image-name p {
+  text-transform: lowercase;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.image-name p:first-letter {
+  text-transform: capitalize !important;
+}
+
+.image-container {
+  display: inline-flex;
+  padding: 20px 20px 20px 0;
 }
 
 /* About Page */

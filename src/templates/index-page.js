@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <>
-    <Container>
+    <Container className="mb-5">
       <Row className="align-items-center">
         <Col
           xs={{ span: 12, order: 2 }}
@@ -71,12 +71,6 @@ export const IndexPageTemplate = ({
     </Container>
     <Container>
       <FullWidthText title={intro.heading} text={intro.description} />
-
-      <TextImage
-        title={main.heading}
-        text={main.description}
-        image={mainImage}
-      />
     </Container>
     <div className="bg-gradient-light-white ">
       <Container>
@@ -100,6 +94,11 @@ export const IndexPageTemplate = ({
           {/* <ButtonRow text="Read more" direction="/blog" /> */}
         </Row>
         <BlogRoll />
+        <TextImage
+          title={main.heading}
+          text={main.description}
+          image={mainImage}
+        />
       </Container>
     </div>
   </>
