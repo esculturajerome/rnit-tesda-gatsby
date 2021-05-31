@@ -51,7 +51,7 @@ export default class Index extends React.Component {
           </Row>
           <Row className="py-md-11">
             <FullWidthText
-              title="Let us hear from you directly! "
+              title="Let us hear from you directly!"
               text="We always want to hear from you! Let us know how we can best help you and we'll do our very best. "
             />
 

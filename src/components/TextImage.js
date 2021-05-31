@@ -6,7 +6,7 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 export default ({ title, text, image }) => {
   console.log(image, "image");
   return (
-    <Row className="align-items-center">
+    <Row className="align-items-center py-md-11">
       <Col
         xs={{ span: 12, order: 2 }}
         md={{ span: 7, order: 1 }}
@@ -22,7 +22,7 @@ export default ({ title, text, image }) => {
         lg={{ span: 6, order: 2 }}
         className="mb-3 "
       >
-        <div className="w-md-150 w-lg-130 position-relative">
+        <div className="position-relative">
           <PreviewCompatibleImage imageInfo={image} />
         </div>
       </Col>

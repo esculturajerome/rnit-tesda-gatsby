@@ -21,25 +21,33 @@ export const IndexPageTemplate = ({
 }) => (
   <>
     <Container>
-      <Row className="align-items-center py-md-12">
+      <Row className="align-items-center">
         <Col
           xs={{ span: 12, order: 2 }}
           md={{ span: 7, order: 1 }}
           lg={{ span: 6, order: 1 }}
+          className="mt-2"
         >
           <h1 className="display-3 text-center text-md-start">{title}</h1>
           <p className="lead text-center text-md-start text-muted mb-6 mb-lg-8">
             {subheading}
           </p>
+
+          <div className="text-center text-md-start">
+            <Link className="btn btn-primary lift me-1">Enrol Now</Link>
+            <Link className="btn btn-primary-soft lift">Read More</Link>
+          </div>
         </Col>
         {image && (
           <Col
             xs={{ span: 12, order: 1 }}
             md={{ span: 5, order: 2 }}
             lg={{ span: 6, order: 2 }}
-            className="mb-3"
+            className="mb-3 "
           >
-            <PreviewCompatibleImage imageInfo={image} />
+            <div className="w-md-150 w-lg-130 position-relative">
+              <PreviewCompatibleImage imageInfo={image} />
+            </div>
           </Col>
         )}
       </Row>

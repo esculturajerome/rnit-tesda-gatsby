@@ -115,6 +115,7 @@ h6.text-uppercase {
 }
 
 /* Button */
+
 .btn {
   padding: 0.8125rem 1.25rem !important;
 }
@@ -136,8 +137,8 @@ h6.text-uppercase {
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.lift-lg:focus,
-.lift-lg:hover {
+.lift:focus,
+.lift:hover {
   box-shadow: 0 2rem 5rem rgba(22, 28, 45, 0.1),
     0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.05) !important;
   transform: translate3d(0, -5px, 0);
