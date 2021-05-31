@@ -7,7 +7,7 @@ import transparency from "../img/transparencylogo.png";
 import { graphql, useStaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
-export default () => {
+const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "transparencylogo.png" }) {
@@ -19,6 +19,8 @@ export default () => {
       }
     }
   `);
+
+  console.log(data, "sssx");
 
   return (
     <footer className="py-8 py-md-11 bg-gray-200">
@@ -76,10 +78,7 @@ export default () => {
             </ul>
           </div>
           <div className="col-12 col-md-8 col-lg-8">
-            <PreviewCompatibleImage
-              imageInfo={data.file.childImageSharp.fluid}
-            />
-            <img src={transparency} alt="Transparency Logo" />
+            <PreviewCompatibleImage imageInfo={data.file} />
             <p className="text-muted pt-3">
               A Transparency Seal, prominently displayed on the main page of the
               website of a particular government agency, is a certificate that
@@ -94,3 +93,5 @@ export default () => {
     </footer>
   );
 };
+
+export default Footer;
