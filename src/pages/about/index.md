@@ -21,4 +21,3 @@ mission and Vision:
       transparency, 5S, strong desire for improvement, teamwork and cooperation.
 image: /img/org-chart.jpg
 ---
-### body
