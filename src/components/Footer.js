@@ -3,7 +3,6 @@ import React from "react";
 import email from "../img/social/email.svg";
 import phone from "../img/social/phone-call.svg";
 import map from "../img/social/maps-and-flags.svg";
-import transparency from "../img/transparencylogo.png";
 import { graphql, useStaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
@@ -19,8 +18,6 @@ const Footer = () => {
       }
     }
   `);
-
-  console.log(data, "sssx");
 
   return (
     <footer className="py-8 py-md-11 bg-gray-200">

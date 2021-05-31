@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/RNIT-logo.png";
+import logo from "../img/RNIT-logo.webp";
 
 import { Navbar, Container, Nav } from "react-bootstrap";
 

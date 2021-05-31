@@ -5,7 +5,6 @@ import { AboutPageTemplate } from "../../templates/about-page";
 const AboutPagePreview = ({ entry, widgetFor }) => {
   const preview = true;
   const data = entry.getIn(["data"]).toJS();
-  console.log(data, "entryxxxyyy");
   return (
     <AboutPageTemplate
       image={entry.getIn(["data", "image"])}

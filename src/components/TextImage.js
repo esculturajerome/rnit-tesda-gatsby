@@ -4,7 +4,6 @@ import { Col, Row } from "react-bootstrap";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 export default ({ title, text, image }) => {
-  console.log(image, "image");
   return (
     <Row className="align-items-center py-md-11">
       <Col
