@@ -26,5 +26,5 @@ main:
   heading: "We have lots of experience "
   description: "We've built well over a dozen Bootstrap themes and sold tens of
     thousands of copies. "
-  image: /img/building.png
+  image: /img/group-photo.jpg
 ---
