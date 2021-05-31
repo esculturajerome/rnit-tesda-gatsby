@@ -1,23 +1,20 @@
 ---
 templateKey: index-page
 title: Romblon National Institute of Technology
-image: /img/illustration-2.png
+image: /img/building.png
 subheading: Skilling Romblon thru quality TVET Delivery for Peoples Prosperity
 intro:
   blurbs:
     - title: Built for developers
-      text:
-        "Landkit is built to make your life easier. Variables, build tooling,
+      text: "Landkit is built to make your life easier. Variables, build tooling,
         documentation, and reusable components. "
       image: /img/safari-pinned-tab.svg
     - title: Designed to be modern
-      text:
-        Designed with the latest design trends in mind. Landkit feels modern,
+      text: Designed with the latest design trends in mind. Landkit feels modern,
         minimal, and beautiful.
       image: /img/safari-pinned-tab.svg
     - title: Documentation for everything
-      text:
-        "We've written extensive documentation for components and tools, so you
+      text: "We've written extensive documentation for components and tools, so you
         never have to reverse engineer anything. "
       image: /img/safari-pinned-tab.svg
   heading: What we offer
