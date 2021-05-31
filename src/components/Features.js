@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-import { Col, Row } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const FeatureGrid = ({ gridItems }) => (
   <>

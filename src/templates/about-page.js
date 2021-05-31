@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
 import { Container, Row, Col } from "react-bootstrap";
 import Gallery from "../components/Gallery";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
@@ -11,16 +10,12 @@ import FullWidthText from "../components/FullWidthText";
 export const AboutPageTemplate = ({
   title,
   desc,
-  content,
-  contentComponent,
   mission,
   vision,
   main,
   image,
   preview,
 }) => {
-  const PageContent = contentComponent || Content;
-
   return (
     <>
       <Container className="py-md-11">
@@ -63,12 +58,6 @@ export const AboutPageTemplate = ({
           </Row>
         </Container>
       </div>
-
-      {/* <Container className="py-md-11 about">
-        <Row>
-          <PageContent className="content" content={content} />
-        </Row>
-      </Container> */}
       <Container className="mt-5">
         <Row>
           <h2 className="display-4 mb-4 text-center">Organizational Chart</h2>

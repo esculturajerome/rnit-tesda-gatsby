@@ -1,8 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { graphql, StaticQuery } from "gatsby";
-import { Container, Row, Col, Carousel } from "react-bootstrap";
-import Img from "gatsby-image";
 
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
@@ -52,25 +49,3 @@ export default function EmployeesGallery(props) {
     />
   );
 }
-
-// export const employeesGalleryQuery = graphql`
-// query EmployeesGallery {
-//   allFile(
-//     filter: {
-//       extension: { regex: "/(jpg)|(jpeg)|(png)/" }
-//       relativeDirectory: { eq: "employees-gallery" }
-//     }
-//   ) {
-//     edges {
-//       node {
-//         name
-//         childImageSharp {
-//           fluid(maxWidth: 100) {
-//             ...GatsbyImageSharpFluid
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-// `;

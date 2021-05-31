@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
 import logo from "../img/RNIT-logo.png";
 
 import { Navbar, Container, Nav } from "react-bootstrap";
@@ -10,7 +9,7 @@ export default () => {
     <Container>
       <Navbar collapseOnSelect expand="lg">
         <Link to="/" className="navbar-brand">
-          <img src={logo} alt="Logo" className="logo" />
+          <img src={logo} alt="Logo" className="logo" width="50" />
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

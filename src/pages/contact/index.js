@@ -64,6 +64,7 @@ export default class Index extends React.Component {
                   <a
                     href="tel:09985731845"
                     target="_blank"
+                    rel="noreferrer"
                     className="h4 text-primary"
                   >
                     09985731845
@@ -75,7 +76,12 @@ export default class Index extends React.Component {
                   Message the Registrar
                 </h6>
                 <div className="mb-5 mb-md-0">
-                  <a href="tel:09487705807" target="_blank" className="h4">
+                  <a
+                    href="tel:09487705807"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="h4"
+                  >
                     09487705807
                   </a>
                 </div>
@@ -86,6 +92,7 @@ export default class Index extends React.Component {
                 <a
                   href="mailto:ant@tesda.gov.ph"
                   target="_blank"
+                  rel="noreferrer"
                   className="h4"
                 >
                   ant@tesda.gov.ph
