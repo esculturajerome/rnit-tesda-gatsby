@@ -17,9 +17,9 @@ export default () => {
             <Link className="nav-link lift" to="/about">
               About
             </Link>
-            <Link className="nav-link lift" to="/products">
+            {/* <Link className="nav-link lift" to="/products">
               Products
-            </Link>
+            </Link> */}
             <Link className="nav-link lift" to="/blog">
               Blog
             </Link>
