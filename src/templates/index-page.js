@@ -76,7 +76,7 @@ export const IndexPageTemplate = ({
     </Container>
     <div className="bg-gradient-light-white ">
       <Container>
-        <Row className="mt-5">
+        <Row className="pt-5">
           <div className="title-container">
             <div className="left-panel">
               <h2 className="mb-0">
