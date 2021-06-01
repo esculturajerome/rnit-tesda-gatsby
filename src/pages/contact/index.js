@@ -77,7 +77,7 @@ export default class Index extends React.Component {
                 </div>
 
                 <Row className="justify-content-md-center">
-                  <Col md={{ span: 4, offset: 1 }}>
+                  <Col md={3}>
                     <div className="field">
                       <label className="label form-label" htmlFor={"name"}>
                         Full name
@@ -95,7 +95,7 @@ export default class Index extends React.Component {
                       </div>
                     </div>
                   </Col>
-                  <Col md={4}>
+                  <Col md={3}>
                     <div className="field">
                       <label className="label form-label" htmlFor={"email"}>
                         Email
@@ -115,7 +115,7 @@ export default class Index extends React.Component {
                   </Col>
                 </Row>
                 <Row className="justify-content-md-center mt-4">
-                  <Col md={{ span: 8, offset: 1 }}>
+                  <Col md={6}>
                     <div className="field">
                       <label className="label form-label" htmlFor={"message"}>
                         Message
@@ -134,8 +134,8 @@ export default class Index extends React.Component {
                   </Col>
                 </Row>
 
-                <Row className="justify-content-center">
-                  <Col xs={12} md={4} lg={4}>
+                <Row className="justify-content-center mt-5">
+                  <Col md={3}>
                     <button
                       className="btn w-100 btn-outline-gray-300 d-flex align-items-center "
                       type="submit"
