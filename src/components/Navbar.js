@@ -26,9 +26,9 @@ export default () => {
             <Link className="nav-link lift" to="/contact">
               Contact
             </Link>
-            <Link className="nav-link lift" to="/contact/examples">
+            {/* <Link className="nav-link lift" to="/contact/examples">
               Form Examples
-            </Link>
+            </Link> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
