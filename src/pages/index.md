@@ -24,7 +24,7 @@ intro:
     commodo consequat. "
 main:
   heading: "We have lots of experience "
-  description: "We've built well over a dozen Bootstrap themes and sold tens of
-    thousands of copies. "
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor.
   image: /img/group-photo.jpg
 ---
