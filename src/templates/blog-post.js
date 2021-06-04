@@ -5,11 +5,10 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import { DiscussionEmbed } from "disqus-react";
 
 import { Container, Col, Row } from "react-bootstrap";
 
-// import {DiscussionEmbed} from 'disqus-react';
+import { Disqus } from "gatsby-plugin-disqus";
 
 export const BlogPostTemplate = ({
   id,
@@ -24,13 +23,10 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
 
-  const baseUrl = "https://rnit-tesda.netlify.app/";
-
-  const disqusShortname = "rnit-tesda";
-  const disqusConfig = {
+  let disqusConfig = {
+    url: path,
     identifier: id,
     title: title,
-    url: baseUrl + path,
   };
 
   return (
@@ -59,12 +55,7 @@ export const BlogPostTemplate = ({
               ))}
             </div>
           ) : null}
-          {!preview && (
-            <DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
-            />
-          )}
+          {!preview && <Disqus config={disqusConfig} />}
         </Col>
       </Row>
     </Container>
@@ -83,12 +74,15 @@ BlogPostTemplate.propTypes = {
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
+  const url = post.fields.slug;
+  const path = "https://rnit-tesda.netlify.app" + url;
+  console.log(path, "path");
 
   return (
     <Layout>
       <BlogPostTemplate
         id={post.id}
-        path={post.fields.slug}
+        path={path}
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}

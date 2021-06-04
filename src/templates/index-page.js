@@ -57,13 +57,14 @@ export const IndexPageTemplate = ({
     <Container className="py-md-11">
       <Row className="mb-4">
         {intro.blurbs.map((goal) => (
-          <Col xs={12} md={4} key={v4()} className="mt-2">
+          <Col xs={12} md={4} key={v4()} className="mt-2 goal-icon">
             {goal.image && (
-              <img
-                src={goal.image.publicURL}
-                alt="goal-icon"
-                className="goal-icon"
-              />
+              <PreviewCompatibleImage imageInfo={`img/${goal.image.base}`} />
+              // <img
+              //   src={`img/${goal.image.base}`}
+              //   alt="goal-icon"
+              //   className="goal-icon"
+              // />
             )}
             <h3>{goal.title}</h3>
             <p className="text-muted mb-6 mb-md-0">{goal.text}</p>
@@ -170,7 +171,7 @@ export const pageQuery = graphql`
         intro {
           blurbs {
             image {
-              publicURL
+              base
             }
             text
             title
