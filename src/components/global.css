@@ -42,6 +42,14 @@ a {
   text-decoration: none !important;
 }
 
+.text-gray-800 {
+  color: #384c74 !important;
+}
+
+.mb-md-8 {
+  margin-bottom: 3rem !important;
+}
+
 .italic {
   font-style: italic !important;
 }
@@ -61,6 +69,10 @@ a.navbar-brand {
   color: var(--primary-color) !important;
 }
 
+.nav-link {
+  margin: 0 0.5rem;
+}
+
 .fs-lg {
   font-size: 0.9rem !important;
   line-height: 1.5;
@@ -68,6 +80,10 @@ a.navbar-brand {
 
 .bg-gradient-light-white {
   background-image: linear-gradient(180deg, #f9fbfd 0, #fff);
+}
+
+.index-blogs .not-featured {
+  display: none;
 }
 
 .text-muted {

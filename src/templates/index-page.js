@@ -18,6 +18,7 @@ export const IndexPageTemplate = ({
   main,
   mainImage,
   intro,
+  preview,
 }) => (
   <>
     <Container className="mb-5">
@@ -54,28 +55,21 @@ export const IndexPageTemplate = ({
         </Col>
       </Row>
     </Container>
+    <Container>
+      <FullWidthText title={intro.heading} text={intro.description} />
+    </Container>
     <Container className="py-md-11">
       <Row className="mb-4">
         {intro.blurbs.map((goal) => (
-          <Col xs={12} md={4} key={v4()} className="mt-2 goal-icon">
-            {goal.image && (
-              <PreviewCompatibleImage imageInfo={`img/${goal.image.base}`} />
-              // <img
-              //   src={`img/${goal.image.base}`}
-              //   alt="goal-icon"
-              //   className="goal-icon"
-              // />
-            )}
+          <Col xs={12} md={3} key={v4()} className="mt-5">
             <h3>{goal.title}</h3>
             <p className="text-muted mb-6 mb-md-0">{goal.text}</p>
           </Col>
         ))}
       </Row>
     </Container>
-    <Container>
-      <FullWidthText title={intro.heading} text={intro.description} />
-    </Container>
-    <div className="bg-gradient-light-white ">
+
+    <div className="bg-gradient-light-white index-blogs">
       <Container>
         <Row className="pt-5">
           <div className="title-container">
@@ -96,7 +90,11 @@ export const IndexPageTemplate = ({
           </div>
           {/* <ButtonRow text="Read more" direction="/blog" /> */}
         </Row>
-        <BlogRoll />
+        {!preview ? (
+          <BlogRoll />
+        ) : (
+          <p className="text-center italic">Blogs Here</p>
+        )}
         <TextImage
           title={main.heading}
           text={main.description}
@@ -170,9 +168,6 @@ export const pageQuery = graphql`
         }
         intro {
           blurbs {
-            image {
-              base
-            }
             text
             title
           }

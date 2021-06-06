@@ -15,79 +15,69 @@ import {
 } from "react-bootstrap";
 import TableData from "../components/TableData";
 
+import { v4 } from "uuid";
+
 import { assessmentData } from "../data/assessmentData";
 import { programsData } from "../data/programsData";
 import { UTPRASData } from "../data/UTPRASData";
+import TextImage from "../components/TextImage";
 
-export const ProgramPageTemplate = ({ image, title, description }) => (
-  <Container className="py-md-11">
-    <Row>
-      <Col>
-        <h1>{title}</h1>
-      </Col>
-    </Row>
-    <Row>
-      <Col>
-        <p>{description}</p>
-      </Col>
-    </Row>
-    <Row>
-      <Col md={3}>
-        <Accordion defaultActiveKey="0">
-          <Card>
-            <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                Click me!
-              </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>Hello! I'm the body</Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                Click me!
-              </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="1">
-              <Card.Body>Hello! I'm another body</Card.Body>
-            </Accordion.Collapse>
-          </Card>
-        </Accordion>
-      </Col>
-    </Row>
-    <Row className="py-md-11">
-      <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
-        <Tab eventKey="home" title="TESDA-Accredited Assessments">
-          <TableData data={assessmentData} />
-        </Tab>
-        <Tab eventKey="programs" title="Accredited Programs">
-          <TableData data={programsData} />
-        </Tab>
-        <Tab eventKey="utpras" title="UTPRAS">
-          <TableData data={UTPRASData} />
-        </Tab>
-      </Tabs>
-    </Row>
-  </Container>
+export const ProgramPageTemplate = ({ image, title, description, goals }) => (
+  <>
+    <Container>
+      <TextImage title={title} text={description} image={image} />
+    </Container>
+    <div className="bg-gradient-light-white ">
+      <Container className="py-md-11">
+        <Row>
+          {goals.map((listGoal) => (
+            <Col md={6} key={listGoal.title} className="mt-5 pe-5">
+              <h3>{listGoal.title}</h3>
+              <p className="text-gray-800 mb-6 mb-md-8">{listGoal.text}</p>
+              <ul>
+                {listGoal.objectives.map((obj) => (
+                  <li key={v4()}>
+                    <p className="text-gray-800">{obj.text}</p>
+                  </li>
+                ))}
+              </ul>
+            </Col>
+          ))}
+        </Row>
+        <Row className="py-md-11">
+          <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
+            <Tab eventKey="home" title="TESDA-Accredited Assessments">
+              <TableData data={assessmentData} />
+            </Tab>
+            <Tab eventKey="programs" title="Accredited Programs">
+              <TableData data={programsData} />
+            </Tab>
+            <Tab eventKey="utpras" title="UTPRAS">
+              <TableData data={UTPRASData} />
+            </Tab>
+          </Tabs>
+        </Row>
+      </Container>
+    </div>
+  </>
 );
 
 ProgramPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   description: PropTypes.string,
+  goals: PropTypes.object,
 };
 
 const ProgramPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
   return (
     <Layout>
       <ProgramPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         description={frontmatter.description}
+        goals={frontmatter.goals.goal}
       />
     </Layout>
   );
@@ -116,6 +106,15 @@ export const ProgramPageQuery = graphql`
           }
         }
         description
+        goals {
+          goal {
+            objectives {
+              text
+            }
+            text
+            title
+          }
+        }
       }
     }
   }
