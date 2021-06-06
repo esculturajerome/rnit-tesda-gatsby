@@ -3,7 +3,7 @@ import React from "react";
 import email from "../img/social/email.svg";
 import phone from "../img/social/phone-call.svg";
 import map from "../img/social/maps-and-flags.svg";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
 const Footer = () => {
@@ -24,7 +24,9 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-4 col-lg-4 mb-5">
-            <h2 className="text-primary">RNIT</h2>
+            <Link to="/">
+              <h2 className="text-primary">RNIT</h2>
+            </Link>
 
             <p className="text-gray-700 mb-2">Get in touch</p>
 
