@@ -321,13 +321,9 @@ label {
 }
 
 .image-name p {
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-size: 0.8rem;
   text-align: center;
-}
-
-.image-name p:first-letter {
-  text-transform: capitalize !important;
 }
 
 .image-container {
