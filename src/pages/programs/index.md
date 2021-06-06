@@ -1,5 +1,4 @@
 ---
-heading: "Excepteur sint occaecat "
 path: /programs
 templateKey: program-page
 title: Programs & Services
