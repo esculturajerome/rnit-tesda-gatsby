@@ -167,7 +167,6 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Description, name: description, widget: string }
-          - { label: Test, name: test, widget: string, required: false }
           - {
               label: Goals,
               name: goals,

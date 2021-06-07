@@ -14,16 +14,16 @@ export default () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Link className="nav-link btn-primary-soft lift" to="/about">
+            <Link className="nav-link lift" to="/about">
               About
             </Link>
-            <Link className="nav-link btn-primary-soft lift" to="/programs">
+            <Link className="nav-link lift" to="/programs">
               Programs & Services
             </Link>
-            <Link className="nav-link btn-primary-soft lift" to="/blog">
+            <Link className="nav-link lift" to="/blog">
               Blog
             </Link>
-            <Link className="nav-link btn-primary-soft lift" to="/contact">
+            <Link className="nav-link lift" to="/contact">
               Contact
             </Link>
             {/* <Link className="nav-link lift" to="/contact/examples">

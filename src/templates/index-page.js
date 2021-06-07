@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({
   preview,
 }) => (
   <>
-    <Container className="mb-5">
+    <Container className="py-md-11">
       <Row className="align-items-center">
         <Col
           xs={{ span: 12, order: 2 }}
@@ -29,7 +29,7 @@ export const IndexPageTemplate = ({
           lg={{ span: 6, order: 1 }}
           className="mt-2"
         >
-          <h1 className="display-3 text-center text-md-start">{title}</h1>
+          <h1 className="display-4 text-center text-md-start">{title}</h1>
           <p className="lead text-center text-md-start text-muted mb-6 mb-lg-8">
             {subheading}
           </p>
@@ -49,19 +49,20 @@ export const IndexPageTemplate = ({
           lg={{ span: 6, order: 2 }}
           className="mb-3 "
         >
-          <div className="w-md-150 w-lg-130 position-relative">
+          <div>
             <PreviewCompatibleImage imageInfo={image} />
           </div>
         </Col>
       </Row>
     </Container>
-    <Container>
+    <Container className="pt-3">
       <FullWidthText title={intro.heading} text={intro.description} />
     </Container>
     <Container className="py-md-11">
       <Row className="mb-4">
         {intro.blurbs.map((goal) => (
-          <Col xs={12} md={3} key={v4()} className="mt-5">
+          <Col xs={12} md={3} key={v4()} className="goal-icon mt-5">
+            <img src={goal.image.publicURL} alt="" />
             <h3>{goal.title}</h3>
             <p className="text-muted mb-6 mb-md-0">{goal.text}</p>
           </Col>
@@ -170,6 +171,9 @@ export const pageQuery = graphql`
           blurbs {
             text
             title
+            image {
+              publicURL
+            }
           }
           heading
           description

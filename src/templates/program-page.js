@@ -31,7 +31,8 @@ export const ProgramPageTemplate = ({ image, title, description, goals }) => (
       <Container className="py-md-11">
         <Row>
           {goals.map((listGoal) => (
-            <Col md={6} key={listGoal.title} className="mt-5 pe-5">
+            <Col md={6} key={listGoal.title} className="mt-5 goal-icon pe-5">
+              <img src={listGoal.image.publicURL} alt="" />
               <h3>{listGoal.title}</h3>
               <p className="text-gray-800 mb-6 mb-md-8">{listGoal.text}</p>
               <ul>
@@ -113,6 +114,9 @@ export const ProgramPageQuery = graphql`
             }
             text
             title
+            image {
+              publicURL
+            }
           }
         }
       }
