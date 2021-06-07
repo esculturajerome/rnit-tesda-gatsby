@@ -9,22 +9,23 @@ intro:
       text: To produce qualified automotive service technicians with highly employable
         skills through quality instruction and an extensive shop experience and
         make them highly competitive in a rapidly changing world of automotive.
-      image: ""
+      image: /img/car-parts.svg
     - title: DRESSMAKING NC II GOALS
       text: To produce qualified dressmakers/garment sewers with highly employable
         skills through quality instruction and an extensive shop experience and
         make them highly competitive in a rapidly changing world of dressmaking.
-      image: ""
+      image: /img/dressmaker.svg
     - title: RAC SERVICING NC II GOALS
       text: To produce DomRAC technician with highly employable skills through quality
         instruction and an extensive shop experience and make them highly
         competitive in a rapidly changing world of DomRAC.
-      image: ""
+      image: /img/technician.svg
     - title: SHIELDED METAL ARC WELDING NC II GOALS
       text: To produce qualified welders/fabricator with highly employable skills
         through quality instruction and an extensive shop experience and make
         them highly competitive in a rapidly changing world of welding and
         fabrication.
+      image: /img/welding.svg
   heading: What we offer
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
