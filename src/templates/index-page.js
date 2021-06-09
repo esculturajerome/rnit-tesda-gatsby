@@ -58,7 +58,11 @@ export const IndexPageTemplate = ({
     </Container>
     <Container className="py-md-11">
       <FullWidthText title={intro.heading} text={intro.description} />
-      <GoalsColumn index="true" />
+      {!preview ? (
+        <GoalsColumn index="true" />
+      ) : (
+        <p className="text-center italic">Goals Here</p>
+      )}
     </Container>
 
     <div className="bg-gradient-light-white index-blogs">
