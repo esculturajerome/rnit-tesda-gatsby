@@ -34,20 +34,33 @@ export const ProgramPageTemplate = ({ image, title, description, goals }) => (
             <Col md={6} key={listGoal.title} className="mt-5 goal-icon pe-5">
               <img src={listGoal.image.publicURL} alt="" />
               <h3>{listGoal.title}</h3>
-              <p className="text-gray-800 mb-6 mb-md-8">{listGoal.text}</p>
-              <ul>
-                {listGoal.objectives.map((obj) => (
-                  <li key={v4()}>
-                    <p className="text-gray-800">{obj.text}</p>
-                  </li>
-                ))}
-              </ul>
+              <p className="text-gray-800 mb-6">{listGoal.text}</p>
+              <Accordion defaultActiveKey="0" className="mb-md-8">
+                <Card>
+                  <Accordion.Toggle as={Card.Header} eventKey="1">
+                    Objectives
+                  </Accordion.Toggle>
+                  <Accordion.Collapse eventKey="1">
+                    <Card.Body>
+                      <ul>
+                        {listGoal.objectives.map((obj) => (
+                          <li>
+                            <p className="text-gray-800" key={v4()}>
+                              {obj.text}
+                            </p>
+                          </li>
+                        ))}
+                      </ul>
+                    </Card.Body>
+                  </Accordion.Collapse>
+                </Card>
+              </Accordion>
             </Col>
           ))}
         </Row>
         <Row className="py-md-11">
           <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
-            <Tab eventKey="home" title="TESDA-Accredited Assessments">
+            <Tab eventKey="home" title="Accredited Assessments">
               <TableData data={assessmentData} />
             </Tab>
             <Tab eventKey="programs" title="Accredited Programs">

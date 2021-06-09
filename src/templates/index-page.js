@@ -10,6 +10,7 @@ import TextImage from "../components/TextImage";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 import { v4 } from "uuid";
+import GoalsColumn from "../components/GoalsColumn";
 
 export const IndexPageTemplate = ({
   image,
@@ -55,19 +56,9 @@ export const IndexPageTemplate = ({
         </Col>
       </Row>
     </Container>
-    <Container className="pt-3">
-      <FullWidthText title={intro.heading} text={intro.description} />
-    </Container>
     <Container className="py-md-11">
-      <Row className="mb-4">
-        {intro.blurbs.map((goal) => (
-          <Col xs={12} md={3} key={v4()} className="goal-icon mt-5">
-            <img src={goal.image.publicURL} alt="" />
-            <h3>{goal.title}</h3>
-            <p className="text-muted mb-6 mb-md-0">{goal.text}</p>
-          </Col>
-        ))}
-      </Row>
+      <FullWidthText title={intro.heading} text={intro.description} />
+      <GoalsColumn index="true" />
     </Container>
 
     <div className="bg-gradient-light-white index-blogs">
@@ -89,7 +80,6 @@ export const IndexPageTemplate = ({
               </Link>
             </div>
           </div>
-          {/* <ButtonRow text="Read more" direction="/blog" /> */}
         </Row>
         {!preview ? (
           <BlogRoll />
