@@ -72,33 +72,6 @@ collections:
                     widget: text,
                     required: false,
                   },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    required: false,
-                    fields:
-                      [
-                        {
-                          label: Image,
-                          name: image,
-                          widget: image,
-                          required: false,
-                        },
-                        {
-                          label: Title,
-                          name: title,
-                          widget: string,
-                          required: false,
-                        },
-                        {
-                          label: Text,
-                          name: text,
-                          widget: text,
-                          required: false,
-                        },
-                      ],
-                  },
                 ],
             }
           - {

@@ -158,13 +158,6 @@ export const pageQuery = graphql`
           }
         }
         intro {
-          blurbs {
-            text
-            title
-            image {
-              publicURL
-            }
-          }
           heading
           description
         }
