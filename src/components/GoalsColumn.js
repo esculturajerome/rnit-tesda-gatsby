@@ -50,7 +50,7 @@ export default function GoalsColumn({ index }) {
                 <Accordion defaultActiveKey="0" className="mb-md-8">
                   <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="1">
-                      Objectives
+                      View Objectives
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="1">
                       <Card.Body>
