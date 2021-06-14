@@ -45,7 +45,7 @@ export default function GoalsColumn({ index }) {
             <Col md={6} key={listGoal.title} className="mb-5 goal-icon pe-5">
               <img src={listGoal.image.publicURL} alt="" />
               <h3>{listGoal.title}</h3>
-              <p className="text-gray-800 mb-6">{listGoal.text}</p>
+              <p className="mb-6 text-muted">{listGoal.text}</p>
               {!index && (
                 <Accordion defaultActiveKey="0" className="mb-md-8">
                   <Card>
@@ -57,7 +57,7 @@ export default function GoalsColumn({ index }) {
                         <ul>
                           {listGoal.objectives.map((obj) => (
                             <li>
-                              <p className="text-gray-800" key={v4()}>
+                              <p className="text-muted" key={v4()}>
                                 {obj.text}
                               </p>
                             </li>

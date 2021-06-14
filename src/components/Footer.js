@@ -38,7 +38,9 @@ const Footer = () => {
                     alt="location"
                     style={{ width: "1em", height: "1em", marginRight: "4px" }}
                   />
-                  <span>Poblacion, Alcantara, Romblon</span>
+                  <span className="text-muted">
+                    Poblacion, Alcantara, Romblon
+                  </span>
                 </a>
               </li>
               <li className=" list-social-item me-3 mb-2">
@@ -51,7 +53,7 @@ const Footer = () => {
                     alt="email"
                     style={{ width: "1em", height: "1em", marginRight: "4px" }}
                   />
-                  <span>ant@tesda.gov.ph</span>
+                  <span className="text-muted">ant@tesda.gov.ph</span>
                 </a>
               </li>
               <li className=" list-social-item me-3 mb-2">
@@ -61,7 +63,7 @@ const Footer = () => {
                     alt="phone"
                     style={{ width: "1em", height: "1em", marginRight: "4px" }}
                   />
-                  <span>09985731845</span>
+                  <span className="text-muted">09985731845</span>
                 </a>
               </li>
               <li className=" list-social-item me-3 mb-2">
@@ -71,7 +73,7 @@ const Footer = () => {
                     alt="phone"
                     style={{ width: "1em", height: "1em", marginRight: "4px" }}
                   />
-                  <span>09487705807</span>
+                  <span className="text-muted">09487705807</span>
                 </a>
               </li>
             </ul>
