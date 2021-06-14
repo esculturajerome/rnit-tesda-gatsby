@@ -36,11 +36,21 @@ export const IndexPageTemplate = ({
           </p>
 
           <div className="text-center text-md-start">
-            <Link to="/" className="btn btn-primary lift me-1">
-              Enrol Now
+            <Link
+              to="https://form.jotform.com/201838122431042"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary lift me-1"
+            >
+              Online Enrolment
             </Link>
-            <Link to="/" className="btn btn-primary-soft lift">
-              Read More
+            <Link
+              to="https://form.jotform.com/202118431802039"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary-soft lift"
+            >
+              Online Assessment
             </Link>
           </div>
         </Col>

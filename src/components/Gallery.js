@@ -36,7 +36,7 @@ export default function EmployeesGallery(props) {
               node {
                 name
                 childImageSharp {
-                  fluid(maxWidth: 200) {
+                  fluid(maxWidth: 300) {
                     ...GatsbyImageSharpFluid
                   }
                 }
