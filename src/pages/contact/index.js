@@ -44,8 +44,8 @@ export default class Index extends React.Component {
         <Container>
           <Row>
             <TextImage
-              title="Our Campus is located at"
-              text="Poblacion, Alcantara, Romblon"
+              title="Poblacion, Alcantara, Romblon"
+              text="Our campus address"
               image={building}
             />
           </Row>
