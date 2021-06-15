@@ -137,7 +137,7 @@ export default class Index extends React.Component {
                 <Row className="justify-content-center mt-5">
                   <Col md={3}>
                     <button
-                      className="btn w-100 btn-outline-gray-300 d-flex align-items-center "
+                      className="btn w-100 btn-primary d-flex align-items-center "
                       type="submit"
                     >
                       <span className="mx-auto">Submit</span>

@@ -25,12 +25,17 @@ const Footer = () => {
         <div className="row">
           <div className="col-12 col-md-4 col-lg-4 mb-5">
             <Link to="/">
-              <h2 className="text-primary">RNIT</h2>
+              <h2 className="text-primary mb-0">
+                <b>RNIT</b>
+              </h2>
             </Link>
 
-            <p className="text-gray-700 mb-2">Get in touch</p>
+            <p className="text-gray-700 mb-4">
+              Skilling Romblon thru quality TVET Delivery for Peoples
+              Prosperity.
+            </p>
 
-            <ul className="list-unstyled list-inline list-social mb-6 mb-md-0">
+            <ul className="list-unstyled list-inline list-social mb-4">
               <li className=" list-social-item me-3 mb-2">
                 <a href="#!" className="text-decoration-none">
                   <img
@@ -75,6 +80,9 @@ const Footer = () => {
                   />
                   <span className="text-muted">09487705807</span>
                 </a>
+              </li>
+              <li className="text-muted mt-5">
+                <h6>Copyright © 2021 RNIT</h6>
               </li>
             </ul>
           </div>
