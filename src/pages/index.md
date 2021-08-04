@@ -5,14 +5,16 @@ image: /img/illustration-2.png
 subheading: Skilling Romblon thru quality TVET Delivery for Peoples Prosperity.
 intro:
   blurbs: []
-  heading: What we offer
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. "
+  heading: Philosophy
+  description: An institution that nurtures the total development of the Filipino
+    youth, rich in knowledge, competent in their skills and imbued with positive
+    attitude and work-values; whose program and services reflect the needs of
+    its clientele and that of the greater community it serves; a school that is
+    student centered enabling them to grow into producing, responsible, peaceful
+    and loving individuals
 main:
-  heading: "We have lots of experience "
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor.
+  heading: Mission Statement
+  description: Equipping the province with competent, flexible, economically
+    stable and dignified human resources for domestic and global demands.
   image: /img/group-photo.jpg
 ---
