@@ -3,10 +3,8 @@ path: /programs
 templateKey: program-page
 title: Programs & Services
 image: /img/class-picture.jpg
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-  commodo consequat. Duis aute irure dolor in reprehenderit "
+description: We believe in competence, integrity, high level of commitment,
+  transparency, 5S, strong desire for improvement, teamwork and cooperation
 goals:
   goal:
     - objectives:
