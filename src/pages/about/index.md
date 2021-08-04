@@ -1,9 +1,8 @@
 ---
 templateKey: about-page
 path: /about
-title: Small team. Big hearts.
-description: Our focus is always on finding the best people to work with. Our
-  bar is high, but you look ready to take on the challenge.
+title: Meet our Team
+description: " "
 mission and Vision:
   mission: Equipping the province with competent, flexible, economically stable
     and dignified human resources for domestic and global demands.
