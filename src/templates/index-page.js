@@ -73,7 +73,7 @@ export const IndexPageTemplate = ({
               <h2 className="mb-0">
                 Latest <span className="text-primary">Stories</span>
               </h2>
-              <p>This is a subtitle</p>
+              {/* <p>This is a subtitle</p> */}
             </div>
             <div className="right-panel">
               <Link
