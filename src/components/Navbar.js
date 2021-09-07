@@ -6,8 +6,8 @@ import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 
 export default () => {
   return (
-    <Container>
-      <Navbar collapseOnSelect expand="lg">
+    <Navbar fixed="top" collapseOnSelect expand="lg" bg="light">
+      <Container>
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="Logo" className="logo" width="80" />
         </Link>
@@ -22,13 +22,6 @@ export default () => {
                 <div className="dropdown-item">Online Assessment</div>
               </Link>
             </NavDropdown>
-            <Link className="nav-link lift" to="/blog">
-              Blogs
-            </Link>
-            <Link className="nav-link lift" to="/programs">
-              Programs & Services
-            </Link>
-
             <NavDropdown title="About Us" id="basic-nav-dropdown">
               <Link to="/about">
                 <div className="dropdown-item">Meet our Team</div>
@@ -65,16 +58,31 @@ export default () => {
                 </div>
               </Link>
             </NavDropdown>
-            <Link className="nav-link lift" to="/contact">
+            <NavDropdown title="Transparency" id="basic-nav-dropdown">
+              <Link to="/transparency">
+                <div className="dropdown-item">Transparency Seal</div>
+              </Link>
+              <Link to="/citizen">
+                <div className="dropdown-item">Citizen's Charter</div>
+              </Link>
+            </NavDropdown>
+            <Link className="nav-link" to="/blog">
+              Blogs
+            </Link>
+            <Link className="nav-link" to="/programs">
+              Programs & Services
+            </Link>
+
+            <Link className="nav-link" to="/contact">
               Contact
             </Link>
-            {/* <Link className="nav-link lift" to="/contact/examples">
+            {/* <Link className="nav-link" to="/contact/examples">
               Form Examples
             </Link> */}
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
-    </Container>
+      </Container>
+    </Navbar>
 
     // <div className="container">
     //   <div className="navbar-brand">

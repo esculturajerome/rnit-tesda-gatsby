@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Table } from "react-bootstrap";
 
 import Layout from "../components/Layout";
 
@@ -16,25 +16,51 @@ const OnlineAssessment = () => {
             lg={{ span: 5, order: 1 }}
             className="mt-5 pt-5"
           >
-            <h3 className="text-center text-md-start">
-              Requirements for Regular Student
-            </h3>
-            <ul className="mt-3">
-              <li>
-                3 pcs ID Picture <br />
-                (Passport size ID with white background and collar)
-              </li>
-            </ul>
-            <h3 className="text-center text-md-start mt-5">
-              Requirements for Walk-in Applicant
-            </h3>
-            <ul className="mt-3">
-              <li>Certificate of Employment</li>
-              <li>
-                3 pcs ID Picture <br />
-                (Passport size ID with white background and collar) ​
-              </li>
-            </ul>
+            <h2 className="text-center text-md-start">
+              Requirements for Enrolment
+            </h2>
+            <p>
+              Those who are interested to take the assessment in the different
+              qualifications offered by the TESDA Administered School
+            </p>
+            <Table striped bordered hover>
+              <thead>
+                <tr>
+                  <th>CHECKLIST OF REQUIREMENTS</th>
+                  <th>WHERE TO SECURE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1. Duly accomplished Application Form (1 original)</td>
+                  <td>Applicant </td>
+                </tr>
+                <tr>
+                  <td>2. Self-Assessment Guide</td>
+                  <td>Office of the Administrator/CAC Processing Officer</td>
+                </tr>
+                <tr>
+                  <td>
+                    3. Picture, passport size, white background with collar (2
+                    copies){" "}
+                  </td>
+                  <td>Applicant</td>
+                </tr>
+                <tr>
+                  <td>4. Birth Certificate (1 photocopy)</td>
+                  <td>Philippine Statistics Authority</td>
+                </tr>
+                <tr>
+                  <td>5. Employment Certificate (1 original)</td>
+                  <td>Company</td>
+                </tr>
+                <tr>
+                  <td>6. Training Certificate (1 photocopy)</td>
+                  <td>Training Center Attended</td>
+                </tr>
+              </tbody>
+            </Table>
+
             <button
               className="btn mt-5 btn-primary d-flex align-items-center "
               type="submit"
