@@ -36,13 +36,13 @@ export const AboutPageTemplate = ({
       </Container>
       <div className="bg-gradient-light-white">
         <Container className="py-md-11">
-          <Row>
+          <Row id="mission">
             <FullWidthText title="Mission Statement" text={mission} />
           </Row>
-          <Row className="mb-5">
+          <Row className="mb-5" id="vission">
             <FullWidthText title="Vision Statement" text={vision} />
           </Row>
-          <Row className="mb-4 mt-5">
+          <Row className="mb-4 mt-5" id="policy">
             <Col xs={12} md={4} className="mt-2">
               <h3>Philosophy</h3>
               <p className="text-muted mb-6 mb-md-0">{main.philosophy}</p>
@@ -58,7 +58,7 @@ export const AboutPageTemplate = ({
           </Row>
         </Container>
       </div>
-      <Container className="mt-5">
+      <Container className="mt-5" id="org-chart">
         <Row>
           <h2 className="display-4 mb-4 text-center">Organizational Chart</h2>
         </Row>

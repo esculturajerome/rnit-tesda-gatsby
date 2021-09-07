@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import logo from "../img/RNIT-logo.webp";
 
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 
 export default () => {
   return (
@@ -14,22 +14,57 @@ export default () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Link className="nav-link lift" to="/enrol">
-              Online Enrolment
-            </Link>
-            <Link className="nav-link lift" to="/assessment">
-              Online Assessment
-            </Link>
+            <NavDropdown title="Online Services" id="basic-nav-dropdown">
+              <Link to="/enrol">
+                <div className="dropdown-item">Online Enrolment</div>
+              </Link>
+              <Link to="/assessment">
+                <div className="dropdown-item">Online Assessment</div>
+              </Link>
+            </NavDropdown>
             <Link className="nav-link lift" to="/blog">
               Blogs
             </Link>
             <Link className="nav-link lift" to="/programs">
               Programs & Services
             </Link>
-            <Link className="nav-link lift" to="/about">
-              About
-            </Link>
 
+            <NavDropdown title="About Us" id="basic-nav-dropdown">
+              <Link to="/about">
+                <div className="dropdown-item">Meet our Team</div>
+              </Link>
+              <Link to="/about/#org-chart">
+                <div className="dropdown-item" href="#action/3.1">
+                  Organizational Chart
+                </div>
+              </Link>
+              <NavDropdown.Divider />
+              <Link to="/about/#mission">
+                <div className="dropdown-item" href="#action/3.1">
+                  Mission Statement
+                </div>
+              </Link>
+              <Link to="/about/#vission">
+                <div className="dropdown-item" href="#action/3.2">
+                  Vision Statement
+                </div>
+              </Link>
+              <Link to="/about/#policy">
+                <div className="dropdown-item" href="#action/3.3">
+                  Our Philosophy
+                </div>
+              </Link>
+              <Link to="/about/#policy">
+                <div className="dropdown-item" href="#action/3.3">
+                  Quality Policy
+                </div>
+              </Link>
+              <Link to="/about/#policy">
+                <div className="dropdown-item" href="#action/3.4">
+                  Values Statement
+                </div>
+              </Link>
+            </NavDropdown>
             <Link className="nav-link lift" to="/contact">
               Contact
             </Link>
