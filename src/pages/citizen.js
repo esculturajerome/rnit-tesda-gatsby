@@ -12,12 +12,13 @@ const CitizenCharter = () => {
             <h2 className="text-center text-md-start">
               Download Citizen's Charter PDF
             </h2>
-            <button
-              className="btn btn-primary d-flex align-items-center "
-              type="submit"
+            <a
+              className="btn btn-primary align-items-center"
+              href={`/files/citizens-charter.pdf`}
+              download
             >
               <span className="mx-auto">Download</span>
-            </button>
+            </a>
           </Col>
         </Row>
       </Container>

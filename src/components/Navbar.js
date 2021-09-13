@@ -66,8 +66,8 @@ export default () => {
                 <div className="dropdown-item">Citizen's Charter</div>
               </Link>
             </NavDropdown>
-            <Link className="nav-link" to="/blog">
-              Blogs
+            <Link className="nav-link" to="/announcement">
+              Announcements
             </Link>
             <Link className="nav-link" to="/programs">
               Programs & Services

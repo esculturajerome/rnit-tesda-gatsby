@@ -92,8 +92,7 @@ a.navbar-brand {
 }
 
 .text-muted {
-  color: #869ab8 !important;
-  font-weight: 300 !important;
+  color: #0038a8 !important;
 }
 
 .lead {
@@ -326,8 +325,9 @@ label {
 }
 
 .image-name p {
+  margin-top: 1.5rem;
   text-transform: capitalize;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
 }
 
