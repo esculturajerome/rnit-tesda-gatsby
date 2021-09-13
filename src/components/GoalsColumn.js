@@ -1,18 +1,7 @@
 import React, { Fragment } from "react";
-import PropTypes from "prop-types";
-import { Link, graphql, StaticQuery } from "gatsby";
-import { v4 } from "uuid";
+import { graphql, StaticQuery } from "gatsby";
 
-import {
-  Accordion,
-  Button,
-  Card,
-  Col,
-  Container,
-  Row,
-  Tab,
-  Tabs,
-} from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 export default function GoalsColumn({ index }) {
   return (
@@ -71,37 +60,6 @@ export default function GoalsColumn({ index }) {
             </div>
           </Row>
         </Fragment>
-
-        // <Row className="goal justify-content-md-center">
-        //   {data.markdownRemark.frontmatter.goals.goal.map((listGoal) => (
-        //     <Col md={3} key={listGoal.title} className="mb-5 goal-icon">
-        //       <h3>{listGoal.title}</h3>
-        //       <p>{listGoal.text}</p>
-        //       {!index && (
-        //         <Accordion defaultActiveKey="0" className="mb-md-8">
-        //           <Card>
-        //             <Accordion.Toggle as={Card.Header} eventKey="1">
-        //               View Objectives
-        //             </Accordion.Toggle>
-        //             <Accordion.Collapse eventKey="1">
-        //               <Card.Body>
-        //                 <ul>
-        //                   {listGoal.objectives.map((obj) => (
-        //                     <li>
-        //                       <p className="text-muted" key={v4()}>
-        //                         {obj.text}
-        //                       </p>
-        //                     </li>
-        //                   ))}
-        //                 </ul>
-        //               </Card.Body>
-        //             </Accordion.Collapse>
-        //           </Card>
-        //         </Accordion>
-        //       )}
-        //     </Col>
-        //   ))}
-        // </Row>
       )}
     />
   );

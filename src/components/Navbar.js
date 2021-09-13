@@ -32,7 +32,7 @@ export default () => {
                 </div>
               </Link>
               <NavDropdown.Divider />
-              <Link to="/about/#mission">
+              {/* <Link to="/about/#mission">
                 <div className="dropdown-item" href="#action/3.1">
                   Mission Statement
                 </div>
@@ -56,7 +56,7 @@ export default () => {
                 <div className="dropdown-item" href="#action/3.4">
                   Values Statement
                 </div>
-              </Link>
+              </Link> */}
             </NavDropdown>
             <NavDropdown title="Transparency" id="basic-nav-dropdown">
               <Link to="/transparency">
