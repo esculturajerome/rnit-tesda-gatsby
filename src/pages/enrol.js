@@ -19,45 +19,37 @@ const OnlineEnrolment = () => {
             <h2 className="text-center text-md-start">
               Requirements for Enrolment
             </h2>
-            <p>
+            {/* <p>
               For K12 graduates, ALS Secondary Completers and College
               Undergraduates
-            </p>
+            </p> */}
             <Table striped bordered hover>
               <thead>
                 <tr>
                   <th>CHECKLIST OF REQUIREMENTS</th>
-                  <th>WHERE TO SECURE</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1. Learner’s Profile / Enrolment Form (1 original)</td>
-                  <td>Registrar’s Office </td>
+                  <td>
+                    Medical Certificate from RHU in your Municipality certifying
+                    you are not PUM/PUI
+                  </td>
                 </tr>
                 <tr>
-                  <td>2. Birth Certificate (1 authenticated copy)</td>
-                  <td>Philippine Statistics Authority</td>
+                  <td> Photocopy of BIRTH CERTIFICATE</td>
                 </tr>
                 <tr>
-                  <td>3. Transcript of Records (TOR) (1 photocopy)</td>
-                  <td>Last School Attended</td>
+                  <td>Photocopy of HS Card or DIPLOMA or ALS Certificate</td>
                 </tr>
                 <tr>
-                  <td>4. Form 138 (1 photocopy)</td>
-                  <td>Last School Attended</td>
-                </tr>
-                <tr>
-                  <td>5. Barangay Clearance (1 original)</td>
-                  <td>Barangay Government Office</td>
-                </tr>
-                <tr>
-                  <td>6. Medical Certificate (1 original)</td>
-                  <td>Government Hospital</td>
+                  <td>Recent photo 1x1 I.D picture (4) pcs</td>
                 </tr>
               </tbody>
             </Table>
-
+            <p className="text-muted">
+              Only those with complete requirements shall be accommodated
+            </p>
             <button
               className="btn mt-5 btn-primary d-flex align-items-center "
               type="submit"
