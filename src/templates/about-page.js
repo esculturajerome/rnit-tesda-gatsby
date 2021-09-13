@@ -10,22 +10,24 @@ import FullWidthText from "../components/FullWidthText";
 export const AboutPageTemplate = ({ title, desc, image, preview }) => {
   return (
     <>
-      <Container className="py-md-11">
-        <Row className="justify-content-center mb-5">
-          <Col className="col-12 col-md-10 col-lg-8 text-center">
-            <h1 className="display-2">{title}</h1>
-            <p className="lead text-muted mb-7 mb-md-9">{desc}</p>
-          </Col>
-        </Row>
+      <div className="bg-blue">
+        <Container className="py-md-11">
+          <Row className="justify-content-center mb-5">
+            <Col className="col-12 col-md-10 col-lg-8 text-center">
+              <h1 className="display-2">{title}</h1>
+              <p className="lead text-muted mb-7 mb-md-9">{desc}</p>
+            </Col>
+          </Row>
 
-        <Row>
-          {!preview ? (
-            <Gallery />
-          ) : (
-            <p className="text-center italic">Team Gallery here</p>
-          )}
-        </Row>
-      </Container>
+          <Row>
+            {!preview ? (
+              <Gallery />
+            ) : (
+              <p className="text-center italic">Team Gallery here</p>
+            )}
+          </Row>
+        </Container>
+      </div>
       <Container className="mt-5" id="org-chart">
         <Row>
           <h2 className="display-4 mb-4 text-center">Organizational Chart</h2>

@@ -12,7 +12,7 @@ const Gallery = ({ data }) => {
         {images.edges.map((image) => (
           <div className="image-name">
             <PreviewCompatibleImage imageInfo={image.node} />
-            <p className="text-muted">{image.node.name}</p>
+            <p>{image.node.name}</p>
           </div>
         ))}
       </div>
