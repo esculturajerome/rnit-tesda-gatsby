@@ -2,7 +2,7 @@
 path: /programs
 templateKey: program-page
 title: Programs & Services
-image: /img/class-picture.jpg
+image: /img/group-photo.jpeg
 description: We believe in competence, integrity, high level of commitment,
   transparency, 5S, strong desire for improvement, teamwork and cooperation
 goals:
