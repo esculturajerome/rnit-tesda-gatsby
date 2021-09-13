@@ -7,15 +7,7 @@ import Gallery from "../components/Gallery";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import FullWidthText from "../components/FullWidthText";
 
-export const AboutPageTemplate = ({
-  title,
-  desc,
-  mission,
-  vision,
-  main,
-  image,
-  preview,
-}) => {
+export const AboutPageTemplate = ({ title, desc, image, preview }) => {
   return (
     <>
       <Container className="py-md-11">
@@ -34,30 +26,6 @@ export const AboutPageTemplate = ({
           )}
         </Row>
       </Container>
-      <div className="bg-gradient-light-white">
-        <Container className="py-md-11">
-          <Row id="mission">
-            <FullWidthText title="Mission Statement" text={mission} />
-          </Row>
-          <Row className="mb-5" id="vission">
-            <FullWidthText title="Vision Statement" text={vision} />
-          </Row>
-          <Row className="mb-4 mt-5" id="policy">
-            <Col xs={12} md={4} className="mt-2">
-              <h3>Philosophy</h3>
-              <p className="text-muted mb-6 mb-md-0">{main.philosophy}</p>
-            </Col>
-            <Col xs={12} md={4} className="mt-2">
-              <h3>Quality Policy</h3>
-              <p className="text-muted mb-6 mb-md-0">{main.quality}</p>
-            </Col>
-            <Col xs={12} md={4} className="mt-2">
-              <h3>Values Statement</h3>
-              <p className="text-muted mb-6 mb-md-0">{main.values}</p>
-            </Col>
-          </Row>
-        </Container>
-      </div>
       <Container className="mt-5" id="org-chart">
         <Row>
           <h2 className="display-4 mb-4 text-center">Organizational Chart</h2>
@@ -73,9 +41,7 @@ export const AboutPageTemplate = ({
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  mission: PropTypes.string,
-  vision: PropTypes.string,
-  main: PropTypes.object,
+  desc: PropTypes.string,
 };
 
 const AboutPage = ({ data }) => {
@@ -86,9 +52,6 @@ const AboutPage = ({ data }) => {
         title={post.frontmatter.title}
         desc={post.frontmatter.description}
         image={post.frontmatter.image}
-        mission={post.frontmatter.main.mission}
-        vision={post.frontmatter.main.vision}
-        main={post.frontmatter.main.blurbs}
       />
     </Layout>
   );
@@ -106,15 +69,6 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         description
-        main {
-          mission
-          vision
-          blurbs {
-            philosophy
-            quality
-            values
-          }
-        }
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

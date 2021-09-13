@@ -10,9 +10,6 @@ const AboutPagePreview = ({ entry, widgetFor }) => {
       image={entry.getIn(["data", "image"])}
       title={entry.getIn(["data", "title"])}
       desc={entry.getIn(["data", "description"])}
-      mission={data.main.mission}
-      vision={data.main.vision}
-      main={data.main.blurbs || { blurbs: [] }}
       preview={preview}
     />
   );

@@ -5,7 +5,6 @@ import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 
 const Transparency = ({ data }) => {
-  console.log(data, "data");
   return (
     <Layout>
       <Container>

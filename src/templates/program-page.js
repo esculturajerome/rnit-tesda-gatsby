@@ -21,43 +21,21 @@ import { assessmentData } from "../data/assessmentData";
 import { programsData } from "../data/programsData";
 import { UTPRASData } from "../data/UTPRASData";
 import TextImage from "../components/TextImage";
+import GoalsColumn from "../components/GoalsColumn";
 
 export const ProgramPageTemplate = ({ image, title, description, goals }) => (
   <>
     <Container>
       <TextImage title={title} text={description} image={image} />
     </Container>
+
+    <div className="py-md-11 bg-blue">
+      <Container>
+        <GoalsColumn />
+      </Container>
+    </div>
     <div className="bg-gradient-light-white ">
       <Container className="py-md-11">
-        <Row>
-          {goals.map((listGoal) => (
-            <Col md={6} key={listGoal.title} className="mt-5 goal-icon pe-5">
-              <img src={listGoal.image.publicURL} alt="" />
-              <h3>{listGoal.title}</h3>
-              <p className="text-gray-800 mb-6">{listGoal.text}</p>
-              <Accordion defaultActiveKey="0" className="mb-md-8">
-                <Card>
-                  <Accordion.Toggle as={Card.Header} eventKey="1">
-                    View Objectives
-                  </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="1">
-                    <Card.Body>
-                      <ul>
-                        {listGoal.objectives.map((obj) => (
-                          <li>
-                            <p className="text-gray-800" key={v4()}>
-                              {obj.text}
-                            </p>
-                          </li>
-                        ))}
-                      </ul>
-                    </Card.Body>
-                  </Accordion.Collapse>
-                </Card>
-              </Accordion>
-            </Col>
-          ))}
-        </Row>
         <Row className="py-md-11">
           <Tabs defaultActiveKey="home" id="uncontrolled-tab-example">
             <Tab eventKey="home" title="Accredited Assessments">

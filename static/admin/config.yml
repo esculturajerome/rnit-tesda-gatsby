@@ -26,15 +26,25 @@ collections:
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: false,
+        }
       - {
           label: "Featured Post",
           name: "featuredpost",
           widget: "boolean",
           required: false,
         }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Featured Image",
+          name: "featuredimage",
+          widget: image,
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
       - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "pages"
@@ -97,35 +107,6 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: Description, name: description, widget: string }
-          - {
-              label: Mission & Vision,
-              name: main,
-              widget: object,
-              fields:
-                [
-                  { label: Mission, name: mission, widget: string },
-                  { label: Vision, name: vision, widget: string },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Philosophy, name: philosophy, widget: string },
-                        {
-                          label: Quality Policy,
-                          name: quality,
-                          widget: string,
-                        },
-                        {
-                          label: Values Statement,
-                          name: values,
-                          widget: string,
-                        },
-                      ],
-                  },
-                ],
-            }
           - { label: Organizational Chart, name: image, widget: image }
       - file: "src/pages/programs/index.md"
         label: "Programs Page"

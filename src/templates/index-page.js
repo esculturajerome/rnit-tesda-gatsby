@@ -22,7 +22,7 @@ export const IndexPageTemplate = ({
   preview,
 }) => (
   <>
-    <Container className="py-md-11">
+    <Container className="py-md-11 mt-10">
       <Row className="align-items-center">
         <Col
           xs={{ span: 12, order: 2 }}
@@ -56,14 +56,17 @@ export const IndexPageTemplate = ({
         </Col>
       </Row>
     </Container>
-    <Container className="py-md-11">
-      <FullWidthText title={intro.heading} text={intro.description} />
-      {!preview ? (
-        <GoalsColumn index="true" />
-      ) : (
-        <p className="text-center italic">Goals Here</p>
-      )}
-    </Container>
+    {/* <FullWidthText title={intro.heading} text={intro.description} /> */}
+
+    <div className="py-md-11 bg-blue">
+      <Container>
+        {!preview ? (
+          <GoalsColumn index="true" />
+        ) : (
+          <p className="text-center italic">Goals Here</p>
+        )}
+      </Container>
+    </div>
 
     <div className="bg-gradient-light-white index-blogs">
       <Container>
