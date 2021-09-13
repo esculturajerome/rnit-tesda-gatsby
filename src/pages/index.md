@@ -16,5 +16,5 @@ main:
   heading: Mission Statement
   description: Equipping the province with competent, flexible, economically
     stable and dignified human resources for domestic and global demands.
-  image: /img/group-photo.jpg
+  image: /img/group-photo.jpeg
 ---
