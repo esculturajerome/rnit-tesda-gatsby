@@ -31,7 +31,7 @@ export const IndexPageTemplate = ({
           className="mt-2"
         >
           <h1 className="display-4 text-center text-md-start">{title}</h1>
-          <p className="lead text-center text-md-start text-muted mb-6 mb-lg-8">
+          <p className="lead text-center text-md-start mb-6 mb-lg-8">
             {subheading}
           </p>
 

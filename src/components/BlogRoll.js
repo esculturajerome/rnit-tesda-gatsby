@@ -40,10 +40,8 @@ class BlogRoll extends React.Component {
 
                   <div className="card-body">
                     <h4>{post.frontmatter.title} </h4>
-                    <p className="mb-3 mt-3 text-muted">
-                      {post.frontmatter.date}
-                    </p>
-                    <p className="text-muted">{post.excerpt}</p>
+                    <p className="mb-3 mt-3">{post.frontmatter.date}</p>
+                    <p>{post.excerpt}</p>
                     <div className="mb-3">
                       {post.frontmatter.tags.length > 1 ? (
                         post.frontmatter.tags.map((tag) => (

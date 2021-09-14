@@ -43,9 +43,7 @@ const Footer = () => {
                     alt="location"
                     style={{ width: "1em", height: "1em", marginRight: "4px" }}
                   />
-                  <span className="text-muted">
-                    Poblacion, Alcantara, Romblon
-                  </span>
+                  <span>Poblacion, Alcantara, Romblon</span>
                 </a>
               </li>
               <li className=" list-social-item me-3 mb-2">
@@ -58,7 +56,7 @@ const Footer = () => {
                     alt="email"
                     style={{ width: "1em", height: "1em", marginRight: "4px" }}
                   />
-                  <span className="text-muted">ant@tesda.gov.ph</span>
+                  <span>ant@tesda.gov.ph</span>
                 </a>
               </li>
               <li className=" list-social-item me-3 mb-2">
@@ -68,7 +66,7 @@ const Footer = () => {
                     alt="phone"
                     style={{ width: "1em", height: "1em", marginRight: "4px" }}
                   />
-                  <span className="text-muted">09985731845</span>
+                  <span>09985731845</span>
                 </a>
               </li>
               <li className=" list-social-item me-3 mb-2">
@@ -78,17 +76,17 @@ const Footer = () => {
                     alt="phone"
                     style={{ width: "1em", height: "1em", marginRight: "4px" }}
                   />
-                  <span className="text-muted">09487705807</span>
+                  <span>09487705807</span>
                 </a>
               </li>
-              <li className="text-muted mt-5">
+              <li className="mt-5">
                 <h6>Copyright © 2021 RNIT</h6>
               </li>
             </ul>
           </div>
           <div className="col-12 col-md-8 col-lg-8">
             <PreviewCompatibleImage imageInfo={data.file} />
-            <p className="text-muted pt-3">
+            <p className="pt-3">
               A Transparency Seal, prominently displayed on the main page of the
               website of a particular government agency, is a certificate that
               it has complied with the requirements of Section 93. This Seal

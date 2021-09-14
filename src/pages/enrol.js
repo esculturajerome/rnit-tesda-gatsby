@@ -47,9 +47,7 @@ const OnlineEnrolment = () => {
                 </tr>
               </tbody>
             </Table>
-            <p className="text-muted">
-              Only those with complete requirements shall be accommodated
-            </p>
+            <p>Only those with complete requirements shall be accommodated</p>
             <button
               className="btn mt-5 btn-primary d-flex align-items-center "
               type="submit"

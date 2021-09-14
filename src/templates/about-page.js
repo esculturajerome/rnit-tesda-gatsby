@@ -12,19 +12,18 @@ export const AboutPageTemplate = ({ title, desc, image, preview }) => {
     <>
       <div className="bg-blue">
         <Container className="py-md-11">
-          <Row className="justify-content-center mb-5">
-            <Col className="col-12 col-md-10 col-lg-8 text-center">
-              <h1 className="display-2">{title}</h1>
-              <p className="lead text-muted mb-7 mb-md-9">{desc}</p>
-            </Col>
-          </Row>
-
           <Row>
-            {!preview ? (
-              <Gallery />
-            ) : (
-              <p className="text-center italic">Team Gallery here</p>
-            )}
+            <Col md={4} className="d-flex  justify-content-center goal-title">
+              <h1>{title}</h1>
+              <p className="lead mb-7 mb-md-9">{desc}</p>
+            </Col>
+            <Col md={8}>
+              {!preview ? (
+                <Gallery />
+              ) : (
+                <p className="text-center italic">Team Gallery here</p>
+              )}
+            </Col>
           </Row>
         </Container>
       </div>

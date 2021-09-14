@@ -2,17 +2,12 @@
 
 /* @import "mdbreact/dist/css/mdb.css"; */
 
-:root {
-  --primary-color: #335eea;
-  --text-color: #161c2d;
-}
-
 body,
 html {
   font-family: "Roboto", sans-serif !important;
   line-height: 1.6;
   overflow-x: hidden;
-  color: var(--text-color);
+  color: #161c2d;
 }
 
 h1,
@@ -44,10 +39,6 @@ a {
 
 .mt-10 {
   margin-top: 5rem;
-}
-
-.text-gray-800 {
-  color: #384c74 !important;
 }
 
 .mb-md-8 {
@@ -185,7 +176,7 @@ a.navbar-brand {
 
 .badge.bg-primary-soft {
   background-color: rgba(51, 94, 234, 0.1);
-  color: var(--primary-color);
+  color: #0d6efd;
 }
 .badge.bg-secondary-soft {
   background-color: rgba(80, 102, 144, 0.1);
@@ -212,14 +203,14 @@ h6.text-uppercase {
 
 .btn-outline-gray-300 {
   border-color: #d9e2ef;
-  color: var(--primary-color);
+  color: #0d6efd;
 }
 
 .btn-outline-gray-300.active,
 .btn-outline-gray-300:focus,
 .btn-outline-gray-300:hover {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  background-color: #0d6efd;
+  border-color: #0d6efd;
   color: #fff;
 }
 
@@ -233,7 +224,7 @@ h6.text-uppercase {
 .btn-primary-soft:focus,
 .btn-primary-soft:hover {
   background-color: rgba(51, 94, 234, 0.15);
-  color: var(--primary-color);
+  color: #0d6efd;
 }
 
 .shadow-light-lg {
@@ -342,6 +333,10 @@ label {
   background-position: bottom;
 }
 
+.contact a {
+  color: #fff !important;
+}
+
 /* Gallery */
 
 .carousel {
@@ -366,7 +361,6 @@ label {
 
 .image-name {
   width: 280px;
-  border: 2px solid #fbfbfb;
   padding: 1em 2em;
   margin: 1em;
   box-sizing: border-box;
@@ -375,8 +369,13 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #fff;
-  color: #000;
+  border: 1px solid #fff;
+}
+
+.image-name:nth-child(2n) {
+  background: #fff !important;
+  color: #000 !important;
+  border: 1px solid #0d6efd;
 }
 
 .image-name p {

@@ -39,7 +39,7 @@ export const BlogPostTemplate = ({
           <PostContent content={content} />
           {tags && tags.length ? (
             <div className="mt-5 mb-5">
-              <h6 className="fw-bold text-uppercase text-muted mb-0">Tags</h6>
+              <h6 className="fw-bold text-uppercase mb-0">Tags</h6>
               {tags.map((tag) => (
                 <div
                   key={tag + `tag`}

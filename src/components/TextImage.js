@@ -12,7 +12,7 @@ export default ({ title, text, image }) => {
         lg={{ span: 6, order: 1 }}
       >
         {title && <h2>{title}</h2>}
-        {text && <p className="fs-lg text-muted mb-6">{text}</p>}
+        {text && <p className="fs-lg mb-6">{text}</p>}
       </Col>
 
       <Col

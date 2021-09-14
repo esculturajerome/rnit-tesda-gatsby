@@ -145,55 +145,39 @@ export default class Index extends React.Component {
                   </Col>
                 </Row>
               </form>
-
-              <div className="row py-md-11">
-                <div className="col-12 col-md-4 text-center border-end border-gray-300">
-                  <h6 className="text-uppercase text-gray-700 mb-1">
-                    Message the Admin
-                  </h6>
-                  <div className="mb-5 mb-md-0">
-                    <a
-                      href="tel:09985731845"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="h4 text-primary"
-                    >
-                      09985731845
-                    </a>
-                  </div>
-                </div>
-                <div className="col-12 col-md-4 text-center border-end border-gray-300">
-                  <h6 className="text-uppercase text-gray-700 mb-1">
-                    Message the Registrar
-                  </h6>
-                  <div className="mb-5 mb-md-0">
-                    <a
-                      href="tel:09487705807"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="h4"
-                    >
-                      09487705807
-                    </a>
-                  </div>
-                </div>
-                <div className="col-12 col-md-4 text-center">
-                  <h6 className="text-uppercase text-gray-700 mb-1">
-                    Email us
-                  </h6>
-
-                  <a
-                    href="mailto:ant@tesda.gov.ph"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="h4"
-                  >
-                    ant@tesda.gov.ph
+            </Row>
+          </Container>
+          <div className="bg-blue">
+            <div className="row py-md-11 contact">
+              <div className="col-12 col-md-4 text-center border-end border-gray-300">
+                <h6 className="text-uppercase">Message the Admin</h6>
+                <div className="mb-5 mb-md-0">
+                  <a href="tel:09985731845" target="_blank" rel="noreferrer">
+                    09985731845
                   </a>
                 </div>
               </div>
-            </Row>
-          </Container>
+              <div className="col-12 col-md-4 text-center border-end border-gray-300">
+                <h6 className="text-uppercase">Message the Registrar</h6>
+                <div className="mb-5 mb-md-0">
+                  <a href="tel:09487705807" target="_blank" rel="noreferrer">
+                    09487705807
+                  </a>
+                </div>
+              </div>
+              <div className="col-12 col-md-4 text-center">
+                <h6 className="text-uppercase">Email us</h6>
+
+                <a
+                  href="mailto:ant@tesda.gov.ph"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  ant@tesda.gov.ph
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </Layout>
     );

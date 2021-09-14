@@ -7,7 +7,7 @@ export default ({ title, text }) => {
         <div className="col-12 col-md-10 col-lg-8 text-center">
           {title && <h2>{title}</h2>}
 
-          {text && <p className="fs-lg text-muted mb-7 mb-md-9">{text}</p>}
+          {text && <p className="fs-lg mb-7 mb-md-9">{text}</p>}
         </div>
       </div>
     </div>
