@@ -80,7 +80,7 @@ export const IndexPageTemplate = ({
             </div>
             <div className="right-panel">
               <Link
-                to="/blog"
+                to="/announcement"
                 className="d-flex align-items-center btn btn-primary"
               >
                 View All
