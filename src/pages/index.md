@@ -13,8 +13,7 @@ intro:
     student centered enabling them to grow into producing, responsible, peaceful
     and loving individuals
 main:
-  heading: Mission Statement
-  description: Equipping the province with competent, flexible, economically
-    stable and dignified human resources for domestic and global demands.
-  image: /img/group-photo.jpeg
+  heading: " "
+  description: " "
+  image: /img/vision-mission.jpg
 ---
