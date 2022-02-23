@@ -13,7 +13,7 @@ intro:
     student centered enabling them to grow into producing, responsible, peaceful
     and loving individuals
 main:
-  heading: " "
+  heading: "Our Purpose "
   description: " "
   image: /img/vision-mission.jpg
 ---
