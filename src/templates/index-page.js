@@ -93,18 +93,11 @@ export const IndexPageTemplate = ({
         ) : (
           <p className="text-center italic">Blogs Here</p>
         )}
-       <Row className="align-items-center py-md-11">
-          <Col
-            xs={8}
-            md={8}
-            lg={8}
-            className="mb-3 "
-          >
-            <div className="">
-              <PreviewCompatibleImage imageInfo={mainImage} />
-            </div>
-          </Col>
-        </Row>
+       <TextImage
+          title={main.heading}
+          text={main.description}
+          image={mainImage}
+        />
       </Container>
     </div>
   </>
