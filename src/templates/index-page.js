@@ -11,6 +11,7 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 import { v4 } from "uuid";
 import GoalsColumn from "../components/GoalsColumn";
+import MissionColumn from "../components/MissionColumn";
 
 export const IndexPageTemplate = ({
   image,
@@ -93,11 +94,7 @@ export const IndexPageTemplate = ({
         ) : (
           <p className="text-center italic">Blogs Here</p>
         )}
-       <TextImage
-          title={main.heading}
-          text={main.description}
-          image={mainImage}
-        />
+       <MissionColumn index="true" />
       </Container>
     </div>
   </>
