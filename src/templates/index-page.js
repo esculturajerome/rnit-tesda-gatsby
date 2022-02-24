@@ -94,7 +94,15 @@ export const IndexPageTemplate = ({
         ) : (
           <p className="text-center italic">Blogs Here</p>
         )}
-       <MissionColumn index="true" />
+      </Container>
+    </div>
+         <div className="py-md-11 bg-blue">
+      <Container>
+        {!preview ? (
+          <MissionColumn index="true" />
+        ) : (
+          <p className="text-center italic">MIssion Here</p>
+        )}
       </Container>
     </div>
   </>
