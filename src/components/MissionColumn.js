@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import { Col, Row } from "react-bootstrap";
 
 export default function MissionColumn({ index }) {
-  mission = 
+  const mission = [
     {
       title: "Vision",
       text: "Skilling Romblon thru quality TVET Delivery for Peoples Prosperity.",
@@ -20,7 +20,7 @@ export default function MissionColumn({ index }) {
       title: "Values Statement",
       text: "We believe in competence, integrity, high level of commitment, transparency, 5S, strong desire for improvement, teamwork and cooperation.",
     },
-  
+  ]
   return (
     <Fragment>
       <Row>
