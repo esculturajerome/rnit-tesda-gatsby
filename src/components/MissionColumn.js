@@ -38,7 +38,7 @@ export default function MissionColumn({ index }) {
           <div className="horizontal-scroll">
             <div className="goal-container">
               {mission.map((a) => (
-                <div className="goal-text align-items-center">
+                <div className="mission-text align-items-center">
                   <div>
                     <h3>{a.title}</h3>
                   </div>
