@@ -81,4 +81,25 @@ goals:
             produce a consistently high rate of graduates certification and
             placement through partnership with industries.
       image: /img/welding.svg
+    - title: "FOOD AND BEVERAGE SERVICES NC II GOALS:"
+      text: >-
+        To produce competent food and beverage service attendants with highly
+        employable skills through
+
+        quality instruction and an extensive hands on experience and make them highly competitive in a rapidly
+
+        changing world of food and beverage services.
+      objectives:
+        - text: Teach learners the competencies required of a food and beverage service
+            standards in a high-demand and high paying jobs on food and beverage
+            services facilities/establishments.
+        - text: >-
+            Provide a learning environment of close relevant workshop experience
+            and meaningful
+
+            interaction between trainer and learners instilling work values like teamwork, collaboration, professionalism and work safety among others.
+        - text: Continually strive to provide a high level of satisfaction to produce
+            consistently high rate of graduate certification and job placement
+            through partnership with industries.
+      image: /img/martini.png
 ---
