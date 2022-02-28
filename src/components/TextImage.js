@@ -21,9 +21,11 @@ export default ({ title, text, image }) => {
         lg={{ span: 6, order: 2 }}
         className="mb-3 "
       >
-        <div className="position-relative">
-          <PreviewCompatibleImage imageInfo={image} />
-        </div>
+        {image && (
+          <div className="position-relative">
+            <PreviewCompatibleImage imageInfo={image} />
+          </div>
+        )}
       </Col>
     </Row>
   );

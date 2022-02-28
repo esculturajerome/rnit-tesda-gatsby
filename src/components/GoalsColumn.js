@@ -18,9 +18,6 @@ export default function GoalsColumn({ index }) {
                   }
                   text
                   title
-                  image {
-                    publicURL
-                  }
                 }
               }
             }
@@ -41,17 +38,20 @@ export default function GoalsColumn({ index }) {
               </Col>
             )}
 
-            <div className={index ? "col-md-8" : "col-md-12"}>
+            <div className={index ? "col-md-8 index" : "col-md-12"}>
               <div className="horizontal-scroll">
                 <div className="goal-container">
                   {data.markdownRemark.frontmatter.goals.goal.map(
                     (listGoal) => (
                       <div className="goal-text align-items-center">
                         <div>
-                          <img src={listGoal.image.publicURL} alt="" />
                           <h3>{listGoal.title}</h3>
                         </div>
                         <p>{listGoal.text}</p>
+                        <ul>
+                          {!index &&
+                            listGoal.objectives.map((a) => <li>{a.text}</li>)}
+                        </ul>
                       </div>
                     )
                   )}

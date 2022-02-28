@@ -112,7 +112,6 @@ a.navbar-brand {
 }
 
 .goal-text {
-  width: 330px;
   border: 2px solid white;
   padding: 3em 2.5em;
   margin: 1em;
@@ -122,6 +121,13 @@ a.navbar-brand {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.index .goal-text {
+  width: 330px;
+}
+.goal-text {
+  width: 450px;
 }
 
 .goal-text:nth-child(2n) {
@@ -148,6 +154,10 @@ a.navbar-brand {
 .goal-text h3 {
   margin-bottom: 2em;
   font-weight: bold;
+}
+.goal-text ul {
+  text-align: left;
+  font-size: 0.9rem;
 }
 
 .mission-text {
@@ -176,7 +186,6 @@ a.navbar-brand {
   background: #fff !important;
   color: #0d6efd !important;
 }
-
 
 .goal-text h3 {
   margin-bottom: 2em;

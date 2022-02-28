@@ -2,17 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import {
-  Accordion,
-  Button,
-  Card,
-  Col,
-  Container,
-  Row,
-  Tab,
-  Tabs,
-} from "react-bootstrap";
+import { Container, Row, Tab, Tabs } from "react-bootstrap";
 import TableData from "../components/TableData";
 
 import { v4 } from "uuid";
@@ -26,7 +16,7 @@ import GoalsColumn from "../components/GoalsColumn";
 export const ProgramPageTemplate = ({ image, title, description, goals }) => (
   <>
     <Container>
-      <TextImage title={title} text={description} image={image} />
+      <TextImage title={title} text={description} />
     </Container>
 
     <div className="py-md-11 bg-blue">
@@ -105,9 +95,6 @@ export const ProgramPageQuery = graphql`
             }
             text
             title
-            image {
-              publicURL
-            }
           }
         }
       }

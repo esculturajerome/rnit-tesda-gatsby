@@ -5,22 +5,26 @@ import { Col, Row } from "react-bootstrap";
 export default function MissionColumn({ index }) {
   const mission = [
     {
+      id: "1",
       title: "Vision",
       text: "Skilling Romblon thru quality TVET Delivery for Peoples Prosperity.",
     },
     {
+      id: "2",
       title: "Mission",
       text: "Equipping the province with competent, flexible, economically stable and dignified human resources for domestic and global demands.",
     },
     {
+      id: "3",
       title: "Our Philosophy",
       text: "An institution that nurtures the total development of the Filipino youth, rich in knowledge, competent in their skills and imbued with positive attitude and work-values; whose program and services reflect the needs of its clientele and that of the greater community it servers; a school that is student centered enabling them to grow into producing, responsible,  and loving individuals.",
     },
     {
+      id: "4",
       title: "Values Statement",
       text: "We believe in competence, integrity, high level of commitment, transparency, 5S, strong desire for improvement, teamwork and cooperation.",
     },
-  ]
+  ];
   return (
     <Fragment>
       <Row>
@@ -38,7 +42,7 @@ export default function MissionColumn({ index }) {
           <div className="horizontal-scroll">
             <div className="goal-container">
               {mission.map((a) => (
-                <div className="mission-text align-items-center">
+                <div className="mission-text align-items-center" key={a.id}>
                   <div>
                     <h3>{a.title}</h3>
                   </div>
