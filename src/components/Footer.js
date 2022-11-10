@@ -23,7 +23,7 @@ const Footer = () => {
     <footer className="py-8 py-md-11 bg-gray-200">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-4 col-lg-4 mb-5">
+          <div className="col-12 col-md-4 col-lg-4">
             <Link to="/">
               <h2 className="text-primary mb-0">
                 <b>RNIT</b>
@@ -80,7 +80,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mt-5">
-                <h6>Copyright © 2021 RNIT</h6>
+                <h6>Copyright © 2022 RNIT</h6>
               </li>
             </ul>
           </div>

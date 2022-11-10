@@ -90,13 +90,14 @@ export const IndexPageTemplate = ({
           </div>
         </Row>
         {!preview ? (
-          <BlogRoll />
+          // <BlogRoll />
+          <h2>test</h2>
         ) : (
           <p className="text-center italic">Blogs Here</p>
         )}
       </Container>
     </div>
-         <div className="py-md-11 bg-blue">
+    <div className="py-md-11 bg-blue">
       <Container>
         {!preview ? (
           <MissionColumn index="true" />
