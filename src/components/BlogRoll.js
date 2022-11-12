@@ -9,7 +9,7 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-
+    console.log(posts, "posts");
     return (
       <Row>
         {posts &&
@@ -42,8 +42,8 @@ class BlogRoll extends React.Component {
                     <h4>{post.frontmatter.title} </h4>
                     <p className="mb-3 mt-3">{post.frontmatter.date}</p>
                     <p>{post.excerpt}</p>
-                    <div className="mb-3">
-                      {post.frontmatter.tags.length > 1 ? (
+                    {/* <div className="mb-3">
+                      {post.frontmatter.tags.length > 0 ? (
                         post.frontmatter.tags.map((tag) => (
                           <span
                             key={tag}
@@ -61,7 +61,7 @@ class BlogRoll extends React.Component {
                           </span>
                         </span>
                       )}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </Link>
@@ -100,7 +100,6 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
-                tags
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 800, quality: 100) {

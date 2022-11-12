@@ -15,7 +15,7 @@ export default class BlogIndexPage extends React.Component {
                 Latest <span className="text-primary">Stories</span>
               </h1>
               {/* <p className="mb-3">This is a subtitle</p> */}
-              {/* <BlogRoll /> */}
+              <BlogRoll />
             </Col>
           </Row>
         </Container>

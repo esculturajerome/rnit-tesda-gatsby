@@ -77,11 +77,10 @@ export const IndexPageTemplate = ({
               <h2 className="mb-0">
                 Latest <span className="text-primary">Stories</span>
               </h2>
-              {/* <p>This is a subtitle</p> */}
             </div>
             <div className="right-panel">
               <Link
-                to="/blog"
+                to="/announcement"
                 className="d-flex align-items-center btn btn-primary"
               >
                 View All
@@ -90,8 +89,7 @@ export const IndexPageTemplate = ({
           </div>
         </Row>
         {!preview ? (
-          // <BlogRoll />
-          <h2>test</h2>
+          <BlogRoll />
         ) : (
           <p className="text-center italic">Blogs Here</p>
         )}
