@@ -3,11 +3,11 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 const Gallery = () => {
   const images = [
-    {
-      "No.": 1,
-      NAME: "JERRY P. PAMINDALAN",
-      POSITION: "Vocational School Administrator II",
-    },
+    // {
+    //   "No.": 1,
+    //   NAME: "JERRY P. PAMINDALAN",
+    //   POSITION: "Vocational School Administrator II",
+    // },
     {
       "No.": 2,
       NAME: "JOYSEDYLL M. FAJUTNAO",
